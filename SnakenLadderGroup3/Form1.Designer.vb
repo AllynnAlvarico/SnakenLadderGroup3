@@ -22,12 +22,13 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btnRollDice = New System.Windows.Forms.Button()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ImageList1 = New System.Windows.Forms.ImageList()
+        Me.TitleProgram = New System.Windows.Forms.Label()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.lblBlock1 = New System.Windows.Forms.Label()
         Me.lblBlock2 = New System.Windows.Forms.Label()
         Me.lblBlock3 = New System.Windows.Forms.Label()
@@ -47,17 +48,18 @@ Partial Class Form1
         Me.lblBlock14 = New System.Windows.Forms.Label()
         Me.lblBlock13 = New System.Windows.Forms.Label()
         Me.lblBlock19 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.lblBlock30 = New System.Windows.Forms.Label()
         Me.lblBlock20 = New System.Windows.Forms.Label()
         Me.lblBlock21 = New System.Windows.Forms.Label()
         Me.lblBlock22 = New System.Windows.Forms.Label()
         Me.lblBlock23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
+        Me.lblBlock24 = New System.Windows.Forms.Label()
+        Me.lblBlock29 = New System.Windows.Forms.Label()
+        Me.lblBlock28 = New System.Windows.Forms.Label()
+        Me.lblBlock27 = New System.Windows.Forms.Label()
+        Me.lblBlock26 = New System.Windows.Forms.Label()
+        Me.lblBlock25 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -68,14 +70,16 @@ Partial Class Form1
         Me.btnRollDice.Name = "btnRollDice"
         Me.btnRollDice.Size = New System.Drawing.Size(97, 56)
         Me.btnRollDice.TabIndex = 1
-        Me.btnRollDice.Text = "Button1"
+        Me.btnRollDice.Text = "Roll Dice"
         Me.btnRollDice.UseVisualStyleBackColor = True
         '
         'picDie1
         '
-        Me.picDie1.Location = New System.Drawing.Point(512, 144)
+        Me.picDie1.BackColor = System.Drawing.Color.White
+        Me.picDie1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picDie1.Location = New System.Drawing.Point(499, 248)
         Me.picDie1.Name = "picDie1"
-        Me.picDie1.Size = New System.Drawing.Size(100, 100)
+        Me.picDie1.Size = New System.Drawing.Size(97, 97)
         Me.picDie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picDie1.TabIndex = 2
         Me.picDie1.TabStop = False
@@ -90,14 +94,15 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Label1
+        'TitleProgram
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Snake and Ladder"
+        Me.TitleProgram.BackColor = System.Drawing.Color.Transparent
+        Me.TitleProgram.Font = New System.Drawing.Font("Constantia", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TitleProgram.Location = New System.Drawing.Point(20, 9)
+        Me.TitleProgram.Name = "TitleProgram"
+        Me.TitleProgram.Size = New System.Drawing.Size(248, 44)
+        Me.TitleProgram.TabIndex = 1
+        Me.TitleProgram.Text = "Snake and Ladder"
         '
         'ImageList1
         '
@@ -266,7 +271,7 @@ Partial Class Form1
         'lblBlock13
         '
         Me.lblBlock13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock13.Location = New System.Drawing.Point(23, 248)
+        Me.lblBlock13.Location = New System.Drawing.Point(64, 248)
         Me.lblBlock13.Name = "lblBlock13"
         Me.lblBlock13.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock13.TabIndex = 21
@@ -281,14 +286,14 @@ Partial Class Form1
         Me.lblBlock19.TabIndex = 22
         Me.lblBlock19.Visible = False
         '
-        'Label19
+        'lblBlock30
         '
-        Me.Label19.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(432, 100)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(30, 30)
-        Me.Label19.TabIndex = 23
-        Me.Label19.Visible = False
+        Me.lblBlock30.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock30.Location = New System.Drawing.Point(432, 100)
+        Me.lblBlock30.Name = "lblBlock30"
+        Me.lblBlock30.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock30.TabIndex = 23
+        Me.lblBlock30.Visible = False
         '
         'lblBlock20
         '
@@ -326,77 +331,87 @@ Partial Class Form1
         Me.lblBlock23.TabIndex = 27
         Me.lblBlock23.Visible = False
         '
-        'Label24
+        'lblBlock24
         '
-        Me.Label24.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label24.Location = New System.Drawing.Point(64, 169)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(30, 30)
-        Me.Label24.TabIndex = 28
-        Me.Label24.Visible = False
+        Me.lblBlock24.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock24.Location = New System.Drawing.Point(64, 169)
+        Me.lblBlock24.Name = "lblBlock24"
+        Me.lblBlock24.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock24.TabIndex = 28
+        Me.lblBlock24.Visible = False
         '
-        'Label25
+        'lblBlock29
         '
-        Me.Label25.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label25.Location = New System.Drawing.Point(327, 100)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(30, 30)
-        Me.Label25.TabIndex = 29
-        Me.Label25.Visible = False
+        Me.lblBlock29.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock29.Location = New System.Drawing.Point(327, 100)
+        Me.lblBlock29.Name = "lblBlock29"
+        Me.lblBlock29.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock29.TabIndex = 29
+        Me.lblBlock29.Visible = False
         '
-        'Label26
+        'lblBlock28
         '
-        Me.Label26.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label26.Location = New System.Drawing.Point(275, 100)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(30, 30)
-        Me.Label26.TabIndex = 30
-        Me.Label26.Visible = False
+        Me.lblBlock28.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock28.Location = New System.Drawing.Point(275, 100)
+        Me.lblBlock28.Name = "lblBlock28"
+        Me.lblBlock28.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock28.TabIndex = 30
+        Me.lblBlock28.Visible = False
         '
-        'Label27
+        'lblBlock27
         '
-        Me.Label27.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(207, 100)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(30, 30)
-        Me.Label27.TabIndex = 31
-        Me.Label27.Visible = False
+        Me.lblBlock27.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock27.Location = New System.Drawing.Point(207, 100)
+        Me.lblBlock27.Name = "lblBlock27"
+        Me.lblBlock27.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock27.TabIndex = 31
+        Me.lblBlock27.Visible = False
         '
-        'Label28
+        'lblBlock26
         '
-        Me.Label28.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label28.Location = New System.Drawing.Point(140, 100)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(30, 30)
-        Me.Label28.TabIndex = 32
-        Me.Label28.Visible = False
+        Me.lblBlock26.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock26.Location = New System.Drawing.Point(140, 100)
+        Me.lblBlock26.Name = "lblBlock26"
+        Me.lblBlock26.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock26.TabIndex = 32
+        Me.lblBlock26.Visible = False
         '
-        'Label29
+        'lblBlock25
         '
-        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label29.Location = New System.Drawing.Point(64, 100)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(30, 30)
-        Me.Label29.TabIndex = 33
-        Me.Label29.Visible = False
+        Me.lblBlock25.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock25.Location = New System.Drawing.Point(64, 100)
+        Me.lblBlock25.Name = "lblBlock25"
+        Me.lblBlock25.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock25.TabIndex = 33
+        Me.lblBlock25.Visible = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(636, 107)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 34
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1061, 661)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label29)
-        Me.Controls.Add(Me.Label28)
-        Me.Controls.Add(Me.Label27)
-        Me.Controls.Add(Me.Label26)
-        Me.Controls.Add(Me.Label25)
-        Me.Controls.Add(Me.Label24)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TitleProgram)
+        Me.Controls.Add(Me.lblBlock25)
+        Me.Controls.Add(Me.lblBlock26)
+        Me.Controls.Add(Me.lblBlock27)
+        Me.Controls.Add(Me.lblBlock28)
+        Me.Controls.Add(Me.lblBlock29)
+        Me.Controls.Add(Me.lblBlock24)
         Me.Controls.Add(Me.lblBlock23)
         Me.Controls.Add(Me.lblBlock22)
         Me.Controls.Add(Me.lblBlock21)
         Me.Controls.Add(Me.lblBlock20)
-        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.lblBlock30)
         Me.Controls.Add(Me.lblBlock19)
         Me.Controls.Add(Me.lblBlock13)
         Me.Controls.Add(Me.lblBlock14)
@@ -424,13 +439,12 @@ Partial Class Form1
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents TitleProgram As Label
 
     Friend WithEvents btnRollDice As Button
     Friend WithEvents picDie1 As PictureBox
@@ -455,15 +469,16 @@ Partial Class Form1
     Friend WithEvents lblBlock14 As Label
     Friend WithEvents lblBlock13 As Label
     Friend WithEvents lblBlock19 As Label
-    Friend WithEvents Label19 As Label
+    Friend WithEvents lblBlock30 As Label
     Friend WithEvents lblBlock20 As Label
     Friend WithEvents lblBlock21 As Label
     Friend WithEvents lblBlock22 As Label
     Friend WithEvents lblBlock23 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
+    Friend WithEvents lblBlock24 As Label
+    Friend WithEvents lblBlock29 As Label
+    Friend WithEvents lblBlock28 As Label
+    Friend WithEvents lblBlock27 As Label
+    Friend WithEvents lblBlock26 As Label
+    Friend WithEvents lblBlock25 As Label
+    Friend WithEvents Button1 As Button
 End Class
