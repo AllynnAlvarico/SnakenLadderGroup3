@@ -1,7 +1,7 @@
 ﻿Public Class Form1
     Dim intDie1 As Integer
-    Dim player As Integer = 6
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Dim conditionStart As Integer = 6
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
         'declarations
         Dim rndNumber As Random
         'generate a new object
@@ -26,11 +26,6 @@
             Case 6
                 picDie1.Image = ImageList1.Images("dice6.JPG")
         End Select
-
-        If intDie1 = player Then
-
-        End If
-
     End Sub
 
 
