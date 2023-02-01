@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +122,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\snakes and ladders board.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice5.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice6.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
