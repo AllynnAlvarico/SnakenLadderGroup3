@@ -27,8 +27,8 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.lblBlock1 = New System.Windows.Forms.Label()
         Me.lblBlock2 = New System.Windows.Forms.Label()
         Me.lblBlock3 = New System.Windows.Forms.Label()
@@ -91,6 +91,16 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(158, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(95, 13)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Snake and Ladder"
+
         'ImageList1
         '
         Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
@@ -102,13 +112,8 @@ Partial Class Form1
         Me.ImageList1.Images.SetKeyName(4, "dice5.JPG")
         Me.ImageList1.Images.SetKeyName(5, "dice6.JPG")
         '
-        'Label1
-        '
-        Me.Label1.Location = New System.Drawing.Point(563, 261)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(100, 23)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Label1"
+       
+        
         '
         'lblBlock1
         '
@@ -379,12 +384,17 @@ Partial Class Form1
         Me.Label29.Size = New System.Drawing.Size(30, 30)
         Me.Label29.TabIndex = 33
         Me.Label29.Visible = False
+
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 645)
+
+        Me.ClientSize = New System.Drawing.Size(1061, 661)
+        Me.Controls.Add(Me.Label1)
+
+       
         Me.Controls.Add(Me.Label29)
         Me.Controls.Add(Me.Label28)
         Me.Controls.Add(Me.Label27)
@@ -415,23 +425,28 @@ Partial Class Form1
         Me.Controls.Add(Me.lblBlock3)
         Me.Controls.Add(Me.lblBlock2)
         Me.Controls.Add(Me.lblBlock1)
-        Me.Controls.Add(Me.Label1)
+       
         Me.Controls.Add(Me.picDie1)
         Me.Controls.Add(Me.Button1)
+
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
+
+    Friend WithEvents Label1 As Label
+
     Friend WithEvents Button1 As Button
     Friend WithEvents picDie1 As PictureBox
     Friend WithEvents ImageList1 As ImageList
-    Friend WithEvents Label1 As Label
+    
     Friend WithEvents lblBlock1 As Label
     Friend WithEvents lblBlock2 As Label
     Friend WithEvents lblBlock3 As Label
