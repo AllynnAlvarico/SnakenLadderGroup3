@@ -4,7 +4,7 @@
     Dim intScore As Integer
 
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnPlayer1.Click
 
         'declaration
         Dim intValue As Integer
@@ -54,5 +54,6 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
 
 End Class
