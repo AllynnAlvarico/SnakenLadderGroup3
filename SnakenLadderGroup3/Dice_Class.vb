@@ -12,19 +12,4 @@
         Console.WriteLine(intDie1)
         Return intDie1
     End Function
-
-    'Public Dice As Integer
-    'Public Sub setDice()
-    '    Dim rndNumber As Random
-    '    Dim Dice As Integer
-    '    rndNumber = New Random
-    '    Dice = rndNumber.Next(1, 7)
-    '    Console.WriteLine(Dice)
-    'End Sub
-    'Public Function getDice1()
-    '    Return Dice
-    'End Function
-
-
-
 End Class
