@@ -28,7 +28,6 @@
     End Sub
     Public Sub Dice_Show2()
         Dim objDice2 As Integer = ClassDice.getDice()
-
         Select Case objDice2
             Case 1
                 picDie2.Image = ImageList1.Images("dice1.JPG")
@@ -48,13 +47,15 @@
     Public Sub setPlayer1(Dice As Integer)
         If Dice = player_StartCondition Then
             MessageBox.Show("Player 1 rolled a 6 now counter")
-            '.Location = New Point(39, 426) 'Starting Player 1(Mario)
+            picMario.Location = New Point(39, 390) 'Starting Player 1(Mario)
+            picMario.Visible = True
         End If
     End Sub
     Public Sub setPlayer2(Dice As Integer)
         If Dice = player_StartCondition Then
             MessageBox.Show("Player 2 rolled a 6 now counter")
-            '.Location = New Point(39, 390) 'Starting Player 2(Yoshi)
+            picYoshi.Location = New Point(39, 426) 'Starting Player 2(Yoshi)
+            picYoshi.Visible = True
         End If
     End Sub
 End Class
