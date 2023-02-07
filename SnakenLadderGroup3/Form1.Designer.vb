@@ -27,7 +27,6 @@ Partial Class Form1
         Me.btnPlayer1 = New System.Windows.Forms.Button()
         Me.TitleProgram = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.lblBlock1 = New System.Windows.Forms.Label()
         Me.lblBlock2 = New System.Windows.Forms.Label()
         Me.lblBlock3 = New System.Windows.Forms.Label()
         Me.lblBlock4 = New System.Windows.Forms.Label()
@@ -55,8 +54,6 @@ Partial Class Form1
         Me.lblBlock29 = New System.Windows.Forms.Label()
         Me.lblBlock28 = New System.Windows.Forms.Label()
         Me.lblBlock27 = New System.Windows.Forms.Label()
-        Me.lblBlock26 = New System.Windows.Forms.Label()
-        Me.lblBlock25 = New System.Windows.Forms.Label()
         Me.btnPlayer2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -68,6 +65,8 @@ Partial Class Form1
         Me.picMario = New System.Windows.Forms.PictureBox()
         Me.picYoshi = New System.Windows.Forms.PictureBox()
         Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
+        Me.lblBlock26 = New System.Windows.Forms.Label()
+        Me.lblBlock25 = New System.Windows.Forms.Label()
         CType(Me.picPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,15 +111,6 @@ Partial Class Form1
         Me.ImageList1.Images.SetKeyName(4, "dice5.JPG")
         Me.ImageList1.Images.SetKeyName(5, "dice6.JPG")
         '
-        'lblBlock1
-        '
-        Me.lblBlock1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock1.Location = New System.Drawing.Point(64, 408)
-        Me.lblBlock1.Name = "lblBlock1"
-        Me.lblBlock1.Size = New System.Drawing.Size(30, 30)
-        Me.lblBlock1.TabIndex = 4
-        Me.lblBlock1.Visible = False
-        '
         'lblBlock2
         '
         Me.lblBlock2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -133,7 +123,7 @@ Partial Class Form1
         'lblBlock3
         '
         Me.lblBlock3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock3.Location = New System.Drawing.Point(207, 408)
+        Me.lblBlock3.Location = New System.Drawing.Point(219, 408)
         Me.lblBlock3.Name = "lblBlock3"
         Me.lblBlock3.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock3.TabIndex = 6
@@ -142,7 +132,7 @@ Partial Class Form1
         'lblBlock4
         '
         Me.lblBlock4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock4.Location = New System.Drawing.Point(286, 408)
+        Me.lblBlock4.Location = New System.Drawing.Point(309, 408)
         Me.lblBlock4.Name = "lblBlock4"
         Me.lblBlock4.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock4.TabIndex = 7
@@ -151,7 +141,7 @@ Partial Class Form1
         'lblBlock5
         '
         Me.lblBlock5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock5.Location = New System.Drawing.Point(354, 408)
+        Me.lblBlock5.Location = New System.Drawing.Point(396, 408)
         Me.lblBlock5.Name = "lblBlock5"
         Me.lblBlock5.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock5.TabIndex = 8
@@ -160,7 +150,7 @@ Partial Class Form1
         'lblBlock6
         '
         Me.lblBlock6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock6.Location = New System.Drawing.Point(432, 408)
+        Me.lblBlock6.Location = New System.Drawing.Point(479, 408)
         Me.lblBlock6.Name = "lblBlock6"
         Me.lblBlock6.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock6.TabIndex = 9
@@ -169,7 +159,7 @@ Partial Class Form1
         'lblBlock12
         '
         Me.lblBlock12.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock12.Location = New System.Drawing.Point(64, 332)
+        Me.lblBlock12.Location = New System.Drawing.Point(45, 322)
         Me.lblBlock12.Name = "lblBlock12"
         Me.lblBlock12.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock12.TabIndex = 10
@@ -178,7 +168,7 @@ Partial Class Form1
         'lblBlock11
         '
         Me.lblBlock11.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock11.Location = New System.Drawing.Point(140, 332)
+        Me.lblBlock11.Location = New System.Drawing.Point(140, 322)
         Me.lblBlock11.Name = "lblBlock11"
         Me.lblBlock11.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock11.TabIndex = 11
@@ -187,7 +177,7 @@ Partial Class Form1
         'lblBlock10
         '
         Me.lblBlock10.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock10.Location = New System.Drawing.Point(207, 332)
+        Me.lblBlock10.Location = New System.Drawing.Point(219, 322)
         Me.lblBlock10.Name = "lblBlock10"
         Me.lblBlock10.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock10.TabIndex = 12
@@ -196,7 +186,7 @@ Partial Class Form1
         'lblBlock9
         '
         Me.lblBlock9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock9.Location = New System.Drawing.Point(286, 332)
+        Me.lblBlock9.Location = New System.Drawing.Point(309, 322)
         Me.lblBlock9.Name = "lblBlock9"
         Me.lblBlock9.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock9.TabIndex = 13
@@ -205,7 +195,7 @@ Partial Class Form1
         'lblBlock8
         '
         Me.lblBlock8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock8.Location = New System.Drawing.Point(354, 332)
+        Me.lblBlock8.Location = New System.Drawing.Point(396, 322)
         Me.lblBlock8.Name = "lblBlock8"
         Me.lblBlock8.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock8.TabIndex = 14
@@ -214,7 +204,7 @@ Partial Class Form1
         'lblBlock7
         '
         Me.lblBlock7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock7.Location = New System.Drawing.Point(432, 332)
+        Me.lblBlock7.Location = New System.Drawing.Point(479, 322)
         Me.lblBlock7.Name = "lblBlock7"
         Me.lblBlock7.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock7.TabIndex = 15
@@ -223,7 +213,7 @@ Partial Class Form1
         'lblBlock18
         '
         Me.lblBlock18.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock18.Location = New System.Drawing.Point(432, 248)
+        Me.lblBlock18.Location = New System.Drawing.Point(479, 231)
         Me.lblBlock18.Name = "lblBlock18"
         Me.lblBlock18.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock18.TabIndex = 16
@@ -232,7 +222,7 @@ Partial Class Form1
         'lblBlock17
         '
         Me.lblBlock17.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock17.Location = New System.Drawing.Point(354, 248)
+        Me.lblBlock17.Location = New System.Drawing.Point(396, 231)
         Me.lblBlock17.Name = "lblBlock17"
         Me.lblBlock17.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock17.TabIndex = 17
@@ -241,7 +231,7 @@ Partial Class Form1
         'lblBlock16
         '
         Me.lblBlock16.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock16.Location = New System.Drawing.Point(286, 248)
+        Me.lblBlock16.Location = New System.Drawing.Point(309, 231)
         Me.lblBlock16.Name = "lblBlock16"
         Me.lblBlock16.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock16.TabIndex = 18
@@ -250,7 +240,7 @@ Partial Class Form1
         'lblBlock15
         '
         Me.lblBlock15.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock15.Location = New System.Drawing.Point(207, 248)
+        Me.lblBlock15.Location = New System.Drawing.Point(219, 231)
         Me.lblBlock15.Name = "lblBlock15"
         Me.lblBlock15.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock15.TabIndex = 19
@@ -259,7 +249,7 @@ Partial Class Form1
         'lblBlock14
         '
         Me.lblBlock14.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock14.Location = New System.Drawing.Point(140, 248)
+        Me.lblBlock14.Location = New System.Drawing.Point(140, 231)
         Me.lblBlock14.Name = "lblBlock14"
         Me.lblBlock14.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock14.TabIndex = 20
@@ -268,7 +258,7 @@ Partial Class Form1
         'lblBlock13
         '
         Me.lblBlock13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock13.Location = New System.Drawing.Point(64, 248)
+        Me.lblBlock13.Location = New System.Drawing.Point(45, 231)
         Me.lblBlock13.Name = "lblBlock13"
         Me.lblBlock13.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock13.TabIndex = 21
@@ -277,7 +267,7 @@ Partial Class Form1
         'lblBlock19
         '
         Me.lblBlock19.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock19.Location = New System.Drawing.Point(432, 162)
+        Me.lblBlock19.Location = New System.Drawing.Point(479, 142)
         Me.lblBlock19.Name = "lblBlock19"
         Me.lblBlock19.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock19.TabIndex = 22
@@ -286,7 +276,7 @@ Partial Class Form1
         'lblBlock30
         '
         Me.lblBlock30.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock30.Location = New System.Drawing.Point(432, 85)
+        Me.lblBlock30.Location = New System.Drawing.Point(479, 64)
         Me.lblBlock30.Name = "lblBlock30"
         Me.lblBlock30.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock30.TabIndex = 23
@@ -295,7 +285,7 @@ Partial Class Form1
         'lblBlock20
         '
         Me.lblBlock20.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock20.Location = New System.Drawing.Point(354, 162)
+        Me.lblBlock20.Location = New System.Drawing.Point(396, 142)
         Me.lblBlock20.Name = "lblBlock20"
         Me.lblBlock20.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock20.TabIndex = 24
@@ -304,7 +294,7 @@ Partial Class Form1
         'lblBlock21
         '
         Me.lblBlock21.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock21.Location = New System.Drawing.Point(286, 162)
+        Me.lblBlock21.Location = New System.Drawing.Point(309, 142)
         Me.lblBlock21.Name = "lblBlock21"
         Me.lblBlock21.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock21.TabIndex = 25
@@ -313,7 +303,7 @@ Partial Class Form1
         'lblBlock22
         '
         Me.lblBlock22.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock22.Location = New System.Drawing.Point(207, 162)
+        Me.lblBlock22.Location = New System.Drawing.Point(219, 142)
         Me.lblBlock22.Name = "lblBlock22"
         Me.lblBlock22.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock22.TabIndex = 26
@@ -322,7 +312,7 @@ Partial Class Form1
         'lblBlock23
         '
         Me.lblBlock23.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock23.Location = New System.Drawing.Point(140, 162)
+        Me.lblBlock23.Location = New System.Drawing.Point(140, 142)
         Me.lblBlock23.Name = "lblBlock23"
         Me.lblBlock23.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock23.TabIndex = 27
@@ -331,7 +321,7 @@ Partial Class Form1
         'lblBlock24
         '
         Me.lblBlock24.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock24.Location = New System.Drawing.Point(64, 162)
+        Me.lblBlock24.Location = New System.Drawing.Point(45, 142)
         Me.lblBlock24.Name = "lblBlock24"
         Me.lblBlock24.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock24.TabIndex = 28
@@ -340,7 +330,7 @@ Partial Class Form1
         'lblBlock29
         '
         Me.lblBlock29.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock29.Location = New System.Drawing.Point(354, 85)
+        Me.lblBlock29.Location = New System.Drawing.Point(396, 64)
         Me.lblBlock29.Name = "lblBlock29"
         Me.lblBlock29.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock29.TabIndex = 29
@@ -349,7 +339,7 @@ Partial Class Form1
         'lblBlock28
         '
         Me.lblBlock28.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock28.Location = New System.Drawing.Point(286, 85)
+        Me.lblBlock28.Location = New System.Drawing.Point(309, 64)
         Me.lblBlock28.Name = "lblBlock28"
         Me.lblBlock28.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock28.TabIndex = 30
@@ -358,29 +348,11 @@ Partial Class Form1
         'lblBlock27
         '
         Me.lblBlock27.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock27.Location = New System.Drawing.Point(207, 85)
+        Me.lblBlock27.Location = New System.Drawing.Point(219, 64)
         Me.lblBlock27.Name = "lblBlock27"
         Me.lblBlock27.Size = New System.Drawing.Size(30, 30)
         Me.lblBlock27.TabIndex = 31
         Me.lblBlock27.Visible = False
-        '
-        'lblBlock26
-        '
-        Me.lblBlock26.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock26.Location = New System.Drawing.Point(140, 85)
-        Me.lblBlock26.Name = "lblBlock26"
-        Me.lblBlock26.Size = New System.Drawing.Size(30, 30)
-        Me.lblBlock26.TabIndex = 32
-        Me.lblBlock26.Visible = False
-        '
-        'lblBlock25
-        '
-        Me.lblBlock25.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblBlock25.Location = New System.Drawing.Point(64, 85)
-        Me.lblBlock25.Name = "lblBlock25"
-        Me.lblBlock25.Size = New System.Drawing.Size(30, 30)
-        Me.lblBlock25.TabIndex = 33
-        Me.lblBlock25.Visible = False
         '
         'btnPlayer2
         '
@@ -499,6 +471,24 @@ Partial Class Form1
         Me.ImageList2.Images.SetKeyName(0, "Player1 Counter")
         Me.ImageList2.Images.SetKeyName(1, "Player2 counter")
         '
+        'lblBlock26
+        '
+        Me.lblBlock26.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock26.Location = New System.Drawing.Point(140, 64)
+        Me.lblBlock26.Name = "lblBlock26"
+        Me.lblBlock26.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock26.TabIndex = 32
+        Me.lblBlock26.Visible = False
+        '
+        'lblBlock25
+        '
+        Me.lblBlock25.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblBlock25.Location = New System.Drawing.Point(45, 64)
+        Me.lblBlock25.Name = "lblBlock25"
+        Me.lblBlock25.Size = New System.Drawing.Size(30, 30)
+        Me.lblBlock25.TabIndex = 33
+        Me.lblBlock25.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -543,7 +533,6 @@ Partial Class Form1
         Me.Controls.Add(Me.lblBlock4)
         Me.Controls.Add(Me.lblBlock3)
         Me.Controls.Add(Me.lblBlock2)
-        Me.Controls.Add(Me.lblBlock1)
         Me.Controls.Add(Me.picDie1)
         Me.Controls.Add(Me.btnPlayer1)
         Me.Controls.Add(Me.PictureBox1)
@@ -567,8 +556,6 @@ Partial Class Form1
     Friend WithEvents btnPlayer1 As Button
     Friend WithEvents picDie1 As PictureBox
     Friend WithEvents ImageList1 As ImageList
-
-    Friend WithEvents lblBlock1 As Label
     Friend WithEvents lblBlock2 As Label
     Friend WithEvents lblBlock3 As Label
     Friend WithEvents lblBlock4 As Label
@@ -596,8 +583,6 @@ Partial Class Form1
     Friend WithEvents lblBlock29 As Label
     Friend WithEvents lblBlock28 As Label
     Friend WithEvents lblBlock27 As Label
-    Friend WithEvents lblBlock26 As Label
-    Friend WithEvents lblBlock25 As Label
     Friend WithEvents picDie2 As PictureBox
     Friend WithEvents btnPlayer2 As Button
     Friend WithEvents Label1 As Label
@@ -607,4 +592,6 @@ Partial Class Form1
     Friend WithEvents picMario As PictureBox
     Friend WithEvents picYoshi As PictureBox
     Friend WithEvents ImageList2 As ImageList
+    Friend WithEvents lblBlock26 As Label
+    Friend WithEvents lblBlock25 As Label
 End Class
