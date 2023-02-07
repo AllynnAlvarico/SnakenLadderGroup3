@@ -59,11 +59,11 @@ Partial Class Form1
         Me.lblBlock27 = New System.Windows.Forms.Label()
         Me.lblBlock26 = New System.Windows.Forms.Label()
         Me.lblBlock25 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.picDie2 = New System.Windows.Forms.PictureBox()
+        Me.btnRollDice2 = New System.Windows.Forms.Button()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRollDice
@@ -72,7 +72,7 @@ Partial Class Form1
         Me.btnRollDice.Name = "btnRollDice"
         Me.btnRollDice.Size = New System.Drawing.Size(97, 56)
         Me.btnRollDice.TabIndex = 1
-        Me.btnRollDice.Text = "Roll Dice"
+        Me.btnRollDice.Text = "Roll Dice (p.1)"
         Me.btnRollDice.UseVisualStyleBackColor = True
         '
         'picDie1
@@ -387,33 +387,33 @@ Partial Class Form1
         Me.lblBlock25.TabIndex = 33
         Me.lblBlock25.Visible = False
         '
-        'PictureBox2
+        'picDie2
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.White
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox2.Location = New System.Drawing.Point(604, 248)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(97, 97)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 35
-        Me.PictureBox2.TabStop = False
+        Me.picDie2.BackColor = System.Drawing.Color.White
+        Me.picDie2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picDie2.Location = New System.Drawing.Point(604, 248)
+        Me.picDie2.Name = "picDie2"
+        Me.picDie2.Size = New System.Drawing.Size(97, 97)
+        Me.picDie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picDie2.TabIndex = 35
+        Me.picDie2.TabStop = False
         '
-        'Button1
+        'btnRollDice2
         '
-        Me.Button1.Location = New System.Drawing.Point(604, 368)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(97, 56)
-        Me.Button1.TabIndex = 34
-        Me.Button1.Text = "Roll Dice"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRollDice2.Location = New System.Drawing.Point(604, 368)
+        Me.btnRollDice2.Name = "btnRollDice2"
+        Me.btnRollDice2.Size = New System.Drawing.Size(97, 56)
+        Me.btnRollDice2.TabIndex = 34
+        Me.btnRollDice2.Text = "Roll Dice (p.2)"
+        Me.btnRollDice2.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1061, 661)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.picDie2)
+        Me.Controls.Add(Me.btnRollDice2)
         Me.Controls.Add(Me.TitleProgram)
         Me.Controls.Add(Me.lblBlock25)
         Me.Controls.Add(Me.lblBlock26)
@@ -452,7 +452,7 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -495,6 +495,6 @@ Partial Class Form1
     Friend WithEvents lblBlock27 As Label
     Friend WithEvents lblBlock26 As Label
     Friend WithEvents lblBlock25 As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents picDie2 As PictureBox
+    Friend WithEvents btnRollDice2 As Button
 End Class

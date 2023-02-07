@@ -42,6 +42,7 @@
                 picDie1.Image = ImageList1.Images("dice6.JPG")
         End Select
     End Sub
+
     Public Sub setGameCondition(Dice As Integer)
         If Dice = player_StartCondition Then
             MessageBox.Show("Player 1 rolled a 6 now counter")
@@ -49,6 +50,19 @@
             lblBlock1.BackColor = Color.Red
 
         End If
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnRollDice2.Click
+
+
+
+
+
+
+
+
+
+
     End Sub
     'asdfghjklqwertyuio
     'hehej'
