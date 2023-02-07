@@ -142,17 +142,5 @@
   <ItemGroup>
     <None Include="Resources\dice6.JPG" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\small-super-mario-game-character-png-29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\142-1427064_report-abuse-super-mario-bros-characters-png.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngdb-yoshi-image-super-mario-world-2-yoshis-island-new-bros-u-story-png-NpgibXJyGzyzcUtH3QHZRbeZx_t.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\img-chara-04-low.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

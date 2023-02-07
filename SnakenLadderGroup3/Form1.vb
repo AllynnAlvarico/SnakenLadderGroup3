@@ -4,18 +4,7 @@
     Dim intScore As Integer
 
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnPlayer1.Click
-
-
-        'declaration
-        Dim intValue As Integer
-        Dim strCounterName As String
-
-        'make the current counter invisible
-        If intScore > 0 Then
-            strCounterName = "lblBlock" & intScore
-            Me.Controls(strCounterName).Visible = False
-        End If
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
 
         ''declaration
         'Dim intValue As Integer = picDie1.Image
@@ -81,12 +70,8 @@
         End If
     End Sub
 
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     Private Sub btnRollDice2_Click(sender As Object, e As EventArgs) Handles btnRollDice2.Click
         Dice_Show2()
-
 
     End Sub
 
