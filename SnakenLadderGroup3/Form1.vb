@@ -7,7 +7,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
 
         'declaration
-        Dim intValue As Integer = picDie1.Image
+        Dim intValue As Integer
         Dim strCounterName As String
 
         'make the current counter invisible
@@ -50,7 +50,9 @@
 
         End If
     End Sub
-    'asdfghjklqwertyuio
-    'hehej'
-    'asdfghjk
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
 End Class
