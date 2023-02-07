@@ -6,20 +6,20 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
 
-        'declaration
-        Dim intValue As Integer = picDie1.Image
-        Dim strCounterName As String
+        ''declaration
+        'Dim intValue As Integer = picDie1.Image
+        'Dim strCounterName As String
 
-        'make the current counter invisible
-        If intScore > 0 Then
-            strCounterName = "lblBlock" & intScore
-            Me.Controls(strCounterName).Visible = False
-        End If
+        ''make the current counter invisible
+        'If intScore > 0 Then
+        '    strCounterName = "lblBlock" & intScore
+        '    Me.Controls(strCounterName).Visible = False
+        'End If
 
-        'move the counter
-        intScore = intScore + intValue
-        strCounterName = "lblBlock" & intScore.ToString
-        Me.Controls(strCounterName).Visible = True
+        ''move the counter
+        'intScore = intScore + intValue
+        'strCounterName = "lblBlock" & intScore.ToString
+        'Me.Controls(strCounterName).Visible = True
 
 
         Dice_Show()
@@ -42,6 +42,24 @@
                 picDie1.Image = ImageList1.Images("dice6.JPG")
         End Select
     End Sub
+    Public Sub Dice_Show2()
+        Dim objDice2 As Integer = ClassDice.getDice()
+
+        Select Case objDice2
+            Case 1
+                picDie2.Image = ImageList1.Images("dice1.JPG")
+            Case 2
+                picDie2.Image = ImageList1.Images("dice2.JPG")
+            Case 3
+                picDie2.Image = ImageList1.Images("dice3.JPG")
+            Case 4
+                picDie2.Image = ImageList1.Images("dice4.JPG")
+            Case 5
+                picDie2.Image = ImageList1.Images("dice5.JPG")
+            Case 6
+                picDie2.Image = ImageList1.Images("dice6.JPG")
+        End Select
+    End Sub
 
     Public Sub setGameCondition(Dice As Integer)
         If Dice = player_StartCondition Then
@@ -52,19 +70,10 @@
         End If
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnRollDice2.Click
-
-
-
-
-
-
-
-
-
+    Private Sub btnRollDice2_Click(sender As Object, e As EventArgs) Handles btnRollDice2.Click
+        Dice_Show2()
 
     End Sub
-    'asdfghjklqwertyuio
-    'hehej'
-    'asdfghjk
+
+
 End Class
