@@ -1,6 +1,18 @@
 ﻿Public Class Form1
-    Dim ClassDice As New Dice_Class
-    Dim player_StartCondition As Integer = 6
+    Public ClassDice As New Dice_Class
+
+    Public player_Start As Integer
+    Public player1_pos, player2_pos As Integer
+    Public startCondition, playTurn As Boolean
+    'Constructor/Initializer
+    Public Sub gameInit()
+        player_Start = 6
+        player1_pos = 0
+        player2_pos = 0
+        startCondition = False
+    End Sub
+
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
         Dice_Show1()
         setPlayer1(ClassDice.getDice())
@@ -45,17 +57,31 @@
     End Sub
 
     Public Sub setPlayer1(Dice As Integer)
-        If Dice = player_StartCondition Then
-            MessageBox.Show("Player 1 rolled a 6 now counter")
-            picMario.Location = New Point(39, 390) 'Starting Player 1(Mario)
-            picMario.Visible = True
+        gameInit()
+
+        If startCondition = False Then
+            If Dice = player_Start Then
+                'MessageBox.Show("Player 1 rolled a 6 now counter")
+                picMario.Location = New Point(39, 390) 'Starting Player 1(Mario)
+                picMario.Visible = True
+                'player1_pos += 0
+                startCondition = True
+            End If
         End If
+        player1_pos += ClassDice.getDice()
+        Console.WriteLine(player1_pos)
+
+
     End Sub
     Public Sub setPlayer2(Dice As Integer)
-        If Dice = player_StartCondition Then
+        gameInit()
+        If Dice = player_Start Then
             MessageBox.Show("Player 2 rolled a 6 now counter")
             picYoshi.Location = New Point(39, 426) 'Starting Player 2(Yoshi)
             picYoshi.Visible = True
+            'player2_pos = 0
+            'player2_pos += ClassDice.getDice()
+            'Console.WriteLine(player2_pos)
         End If
     End Sub
 End Class

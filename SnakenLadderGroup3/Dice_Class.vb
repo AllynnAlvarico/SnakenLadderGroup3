@@ -9,7 +9,7 @@
         intDie1 = rndNumber.Next(1, 7)
 
         'display the value in the label
-        Console.WriteLine(intDie1)
+        'Console.WriteLine(intDie1)
         Return intDie1
     End Function
 End Class

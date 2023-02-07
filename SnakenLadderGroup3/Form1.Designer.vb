@@ -147,7 +147,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnRollDice)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Snake and Ladder"
         CType(Me.picMario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
