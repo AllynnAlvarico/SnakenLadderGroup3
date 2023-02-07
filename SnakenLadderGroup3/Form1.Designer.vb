@@ -27,6 +27,7 @@ Partial Class Form1
         Me.btnPlayer1 = New System.Windows.Forms.Button()
         Me.TitleProgram = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+
         Me.btnPlayer2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -48,6 +49,66 @@ Partial Class Form1
         Me.SuspendLayout()
         '
         'btnPlayer1
+
+        Me.lblBlock1 = New System.Windows.Forms.Label()
+        Me.lblBlock2 = New System.Windows.Forms.Label()
+        Me.lblBlock3 = New System.Windows.Forms.Label()
+        Me.lblBlock4 = New System.Windows.Forms.Label()
+        Me.lblBlock5 = New System.Windows.Forms.Label()
+        Me.lblBlock6 = New System.Windows.Forms.Label()
+        Me.lblBlock12 = New System.Windows.Forms.Label()
+        Me.lblBlock11 = New System.Windows.Forms.Label()
+        Me.lblBlock10 = New System.Windows.Forms.Label()
+        Me.lblBlock9 = New System.Windows.Forms.Label()
+        Me.lblBlock8 = New System.Windows.Forms.Label()
+        Me.lblBlock7 = New System.Windows.Forms.Label()
+        Me.lblBlock18 = New System.Windows.Forms.Label()
+        Me.lblBlock17 = New System.Windows.Forms.Label()
+        Me.lblBlock16 = New System.Windows.Forms.Label()
+        Me.lblBlock15 = New System.Windows.Forms.Label()
+        Me.lblBlock14 = New System.Windows.Forms.Label()
+        Me.lblBlock13 = New System.Windows.Forms.Label()
+        Me.lblBlock19 = New System.Windows.Forms.Label()
+        Me.lblBlock30 = New System.Windows.Forms.Label()
+        Me.lblBlock20 = New System.Windows.Forms.Label()
+        Me.lblBlock21 = New System.Windows.Forms.Label()
+        Me.lblBlock22 = New System.Windows.Forms.Label()
+        Me.lblBlock23 = New System.Windows.Forms.Label()
+        Me.lblBlock24 = New System.Windows.Forms.Label()
+        Me.lblBlock29 = New System.Windows.Forms.Label()
+        Me.lblBlock28 = New System.Windows.Forms.Label()
+        Me.lblBlock27 = New System.Windows.Forms.Label()
+        Me.lblBlock26 = New System.Windows.Forms.Label()
+        Me.lblBlock25 = New System.Windows.Forms.Label()
+        Me.picDie2 = New System.Windows.Forms.PictureBox()
+        Me.btnRollDice2 = New System.Windows.Forms.Button()
+        CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'btnRollDice
+        '
+        Me.btnRollDice.Location = New System.Drawing.Point(490, 368)
+        Me.btnRollDice.Name = "btnRollDice"
+        Me.btnRollDice.Size = New System.Drawing.Size(97, 56)
+        Me.btnRollDice.TabIndex = 1
+        Me.btnRollDice.Text = "Roll Dice (p.1)"
+        Me.btnRollDice.UseVisualStyleBackColor = True
+        '
+        'picDie1
+        '
+        Me.picDie1.BackColor = System.Drawing.Color.White
+        Me.picDie1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picDie1.Location = New System.Drawing.Point(490, 248)
+        Me.picDie1.Name = "picDie1"
+        Me.picDie1.Size = New System.Drawing.Size(97, 97)
+        Me.picDie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picDie1.TabIndex = 2
+        Me.picDie1.TabStop = False
+        '
+        'PictureBox1
+
         '
         Me.btnPlayer1.BackColor = System.Drawing.Color.Khaki
         Me.btnPlayer1.Font = New System.Drawing.Font("Mistral", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -151,6 +212,7 @@ Partial Class Form1
         '
         'picDie1
         '
+
         Me.picDie1.BackColor = System.Drawing.Color.White
         Me.picDie1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.picDie1.Location = New System.Drawing.Point(603, 181)
@@ -200,11 +262,33 @@ Partial Class Form1
         Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList2.Images.SetKeyName(0, "Player1 Counter")
         Me.ImageList2.Images.SetKeyName(1, "Player2 counter")
+
+        'picDie2
+        '
+        Me.picDie2.BackColor = System.Drawing.Color.White
+        Me.picDie2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picDie2.Location = New System.Drawing.Point(604, 248)
+        Me.picDie2.Name = "picDie2"
+        Me.picDie2.Size = New System.Drawing.Size(97, 97)
+        Me.picDie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picDie2.TabIndex = 35
+        Me.picDie2.TabStop = False
+        '
+        'btnRollDice2
+        '
+        Me.btnRollDice2.Location = New System.Drawing.Point(604, 368)
+        Me.btnRollDice2.Name = "btnRollDice2"
+        Me.btnRollDice2.Size = New System.Drawing.Size(97, 56)
+        Me.btnRollDice2.TabIndex = 34
+        Me.btnRollDice2.Text = "Roll Dice (p.2)"
+        Me.btnRollDice2.UseVisualStyleBackColor = True
+
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+
         Me.BackColor = System.Drawing.Color.Olive
         Me.ClientSize = New System.Drawing.Size(908, 661)
         Me.Controls.Add(Me.picYoshi)
@@ -215,6 +299,11 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picDie2)
         Me.Controls.Add(Me.btnPlayer2)
+
+        Me.ClientSize = New System.Drawing.Size(1061, 661)
+        Me.Controls.Add(Me.picDie2)
+        Me.Controls.Add(Me.btnRollDice2)
+
         Me.Controls.Add(Me.TitleProgram)
         Me.Controls.Add(Me.picDie1)
         Me.Controls.Add(Me.btnPlayer1)
@@ -226,8 +315,12 @@ Partial Class Form1
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+
         CType(Me.picMario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).EndInit()
+
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.ResumeLayout(False)
 
     End Sub
@@ -239,6 +332,7 @@ Partial Class Form1
     Friend WithEvents btnPlayer1 As Button
     Friend WithEvents picDie1 As PictureBox
     Friend WithEvents ImageList1 As ImageList
+
     Friend WithEvents picDie2 As PictureBox
     Friend WithEvents btnPlayer2 As Button
     Friend WithEvents Label1 As Label
@@ -248,4 +342,39 @@ Partial Class Form1
     Friend WithEvents picMario As PictureBox
     Friend WithEvents picYoshi As PictureBox
     Friend WithEvents ImageList2 As ImageList
+
+
+    Friend WithEvents lblBlock1 As Label
+    Friend WithEvents lblBlock2 As Label
+    Friend WithEvents lblBlock3 As Label
+    Friend WithEvents lblBlock4 As Label
+    Friend WithEvents lblBlock5 As Label
+    Friend WithEvents lblBlock6 As Label
+    Friend WithEvents lblBlock12 As Label
+    Friend WithEvents lblBlock11 As Label
+    Friend WithEvents lblBlock10 As Label
+    Friend WithEvents lblBlock9 As Label
+    Friend WithEvents lblBlock8 As Label
+    Friend WithEvents lblBlock7 As Label
+    Friend WithEvents lblBlock18 As Label
+    Friend WithEvents lblBlock17 As Label
+    Friend WithEvents lblBlock16 As Label
+    Friend WithEvents lblBlock15 As Label
+    Friend WithEvents lblBlock14 As Label
+    Friend WithEvents lblBlock13 As Label
+    Friend WithEvents lblBlock19 As Label
+    Friend WithEvents lblBlock30 As Label
+    Friend WithEvents lblBlock20 As Label
+    Friend WithEvents lblBlock21 As Label
+    Friend WithEvents lblBlock22 As Label
+    Friend WithEvents lblBlock23 As Label
+    Friend WithEvents lblBlock24 As Label
+    Friend WithEvents lblBlock29 As Label
+    Friend WithEvents lblBlock28 As Label
+    Friend WithEvents lblBlock27 As Label
+    Friend WithEvents lblBlock26 As Label
+    Friend WithEvents lblBlock25 As Label
+    Friend WithEvents picDie2 As PictureBox
+    Friend WithEvents btnRollDice2 As Button
+
 End Class
