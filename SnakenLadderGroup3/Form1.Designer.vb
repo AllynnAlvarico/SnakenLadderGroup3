@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -59,7 +59,6 @@ Partial Class Form1
         Me.lblBlock27 = New System.Windows.Forms.Label()
         Me.lblBlock26 = New System.Windows.Forms.Label()
         Me.lblBlock25 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -385,21 +384,11 @@ Partial Class Form1
         Me.lblBlock25.TabIndex = 33
         Me.lblBlock25.Visible = False
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(636, 107)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 34
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1061, 661)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TitleProgram)
         Me.Controls.Add(Me.lblBlock25)
         Me.Controls.Add(Me.lblBlock26)
@@ -449,7 +438,7 @@ Partial Class Form1
     Friend WithEvents btnRollDice As Button
     Friend WithEvents picDie1 As PictureBox
     Friend WithEvents ImageList1 As ImageList
-    
+
     Friend WithEvents lblBlock1 As Label
     Friend WithEvents lblBlock2 As Label
     Friend WithEvents lblBlock3 As Label
@@ -480,5 +469,4 @@ Partial Class Form1
     Friend WithEvents lblBlock27 As Label
     Friend WithEvents lblBlock26 As Label
     Friend WithEvents lblBlock25 As Label
-    Friend WithEvents Button1 As Button
 End Class

@@ -1,10 +1,26 @@
 ﻿Public Class Form1
     Dim ClassDice As New Dice_Class
     Dim player_StartCondition As Integer = 6
-
+    Dim intScore As Integer
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
+
+        'declaration
+        Dim intValue As Integer = picDie1.Image
+        Dim strCounterName As String
+
+        'make the current counter invisible
+        If intScore > 0 Then
+            strCounterName = "lblBlock" & intScore
+            Me.Controls(strCounterName).Visible = False
+        End If
+
+        'move the counter
+        intScore = intScore + intValue
+        strCounterName = "lblBlock" & intScore.ToString
+        Me.Controls(strCounterName).Visible = True
+
 
         Dice_Show()
         setGameCondition(ClassDice.getDice())
