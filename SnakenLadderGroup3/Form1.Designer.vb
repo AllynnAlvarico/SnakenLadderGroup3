@@ -65,35 +65,16 @@ Partial Class Form1
         Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.picMario1 = New System.Windows.Forms.PictureBox()
-        Me.picMario2 = New System.Windows.Forms.PictureBox()
-        Me.picMario3 = New System.Windows.Forms.PictureBox()
-        Me.picMario4 = New System.Windows.Forms.PictureBox()
-        Me.picMario5 = New System.Windows.Forms.PictureBox()
-        Me.picMario6 = New System.Windows.Forms.PictureBox()
-        Me.picYoshi1 = New System.Windows.Forms.PictureBox()
-        Me.picYoshi2 = New System.Windows.Forms.PictureBox()
-        Me.picYoshi3 = New System.Windows.Forms.PictureBox()
-        Me.picYoshi4 = New System.Windows.Forms.PictureBox()
-        Me.picYoshi5 = New System.Windows.Forms.PictureBox()
-        Me.picYoshi6 = New System.Windows.Forms.PictureBox()
+        Me.picMario = New System.Windows.Forms.PictureBox()
+        Me.picYoshi = New System.Windows.Forms.PictureBox()
+        Me.ImageList2 = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.picPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMario1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMario2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMario3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMario4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMario5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picMario6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picYoshi1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picYoshi2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picYoshi3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picYoshi4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picYoshi5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picYoshi6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnPlayer1
@@ -489,137 +470,34 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'picMario1
+        'picMario
         '
-        Me.picMario1.BackColor = System.Drawing.Color.White
-        Me.picMario1.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
-        Me.picMario1.Location = New System.Drawing.Point(39, 426)
-        Me.picMario1.Name = "picMario1"
-        Me.picMario1.Size = New System.Drawing.Size(36, 29)
-        Me.picMario1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picMario1.TabIndex = 40
-        Me.picMario1.TabStop = False
+        Me.picMario.BackColor = System.Drawing.Color.White
+        Me.picMario.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
+        Me.picMario.Location = New System.Drawing.Point(39, 426)
+        Me.picMario.Name = "picMario"
+        Me.picMario.Size = New System.Drawing.Size(36, 29)
+        Me.picMario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picMario.TabIndex = 40
+        Me.picMario.TabStop = False
         '
-        'picMario2
+        'picYoshi
         '
-        Me.picMario2.BackColor = System.Drawing.Color.White
-        Me.picMario2.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
-        Me.picMario2.Location = New System.Drawing.Point(143, 426)
-        Me.picMario2.Name = "picMario2"
-        Me.picMario2.Size = New System.Drawing.Size(36, 29)
-        Me.picMario2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picMario2.TabIndex = 41
-        Me.picMario2.TabStop = False
+        Me.picYoshi.BackColor = System.Drawing.Color.White
+        Me.picYoshi.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
+        Me.picYoshi.Location = New System.Drawing.Point(39, 390)
+        Me.picYoshi.Name = "picYoshi"
+        Me.picYoshi.Size = New System.Drawing.Size(35, 30)
+        Me.picYoshi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picYoshi.TabIndex = 46
+        Me.picYoshi.TabStop = False
         '
-        'picMario3
+        'ImageList2
         '
-        Me.picMario3.BackColor = System.Drawing.Color.White
-        Me.picMario3.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
-        Me.picMario3.Location = New System.Drawing.Point(222, 426)
-        Me.picMario3.Name = "picMario3"
-        Me.picMario3.Size = New System.Drawing.Size(36, 29)
-        Me.picMario3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picMario3.TabIndex = 42
-        Me.picMario3.TabStop = False
-        '
-        'picMario4
-        '
-        Me.picMario4.BackColor = System.Drawing.Color.White
-        Me.picMario4.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
-        Me.picMario4.Location = New System.Drawing.Point(312, 426)
-        Me.picMario4.Name = "picMario4"
-        Me.picMario4.Size = New System.Drawing.Size(36, 29)
-        Me.picMario4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picMario4.TabIndex = 43
-        Me.picMario4.TabStop = False
-        '
-        'picMario5
-        '
-        Me.picMario5.BackColor = System.Drawing.Color.White
-        Me.picMario5.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
-        Me.picMario5.Location = New System.Drawing.Point(390, 426)
-        Me.picMario5.Name = "picMario5"
-        Me.picMario5.Size = New System.Drawing.Size(36, 29)
-        Me.picMario5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picMario5.TabIndex = 44
-        Me.picMario5.TabStop = False
-        '
-        'picMario6
-        '
-        Me.picMario6.BackColor = System.Drawing.Color.White
-        Me.picMario6.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
-        Me.picMario6.Location = New System.Drawing.Point(481, 426)
-        Me.picMario6.Name = "picMario6"
-        Me.picMario6.Size = New System.Drawing.Size(36, 29)
-        Me.picMario6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picMario6.TabIndex = 45
-        Me.picMario6.TabStop = False
-        '
-        'picYoshi1
-        '
-        Me.picYoshi1.BackColor = System.Drawing.Color.White
-        Me.picYoshi1.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
-        Me.picYoshi1.Location = New System.Drawing.Point(39, 390)
-        Me.picYoshi1.Name = "picYoshi1"
-        Me.picYoshi1.Size = New System.Drawing.Size(35, 30)
-        Me.picYoshi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picYoshi1.TabIndex = 46
-        Me.picYoshi1.TabStop = False
-        '
-        'picYoshi2
-        '
-        Me.picYoshi2.BackColor = System.Drawing.Color.White
-        Me.picYoshi2.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
-        Me.picYoshi2.Location = New System.Drawing.Point(144, 390)
-        Me.picYoshi2.Name = "picYoshi2"
-        Me.picYoshi2.Size = New System.Drawing.Size(35, 30)
-        Me.picYoshi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picYoshi2.TabIndex = 47
-        Me.picYoshi2.TabStop = False
-        '
-        'picYoshi3
-        '
-        Me.picYoshi3.BackColor = System.Drawing.Color.White
-        Me.picYoshi3.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
-        Me.picYoshi3.Location = New System.Drawing.Point(223, 390)
-        Me.picYoshi3.Name = "picYoshi3"
-        Me.picYoshi3.Size = New System.Drawing.Size(35, 30)
-        Me.picYoshi3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picYoshi3.TabIndex = 48
-        Me.picYoshi3.TabStop = False
-        '
-        'picYoshi4
-        '
-        Me.picYoshi4.BackColor = System.Drawing.Color.White
-        Me.picYoshi4.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
-        Me.picYoshi4.Location = New System.Drawing.Point(313, 390)
-        Me.picYoshi4.Name = "picYoshi4"
-        Me.picYoshi4.Size = New System.Drawing.Size(35, 30)
-        Me.picYoshi4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picYoshi4.TabIndex = 49
-        Me.picYoshi4.TabStop = False
-        '
-        'picYoshi5
-        '
-        Me.picYoshi5.BackColor = System.Drawing.Color.White
-        Me.picYoshi5.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
-        Me.picYoshi5.Location = New System.Drawing.Point(391, 390)
-        Me.picYoshi5.Name = "picYoshi5"
-        Me.picYoshi5.Size = New System.Drawing.Size(35, 30)
-        Me.picYoshi5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picYoshi5.TabIndex = 50
-        Me.picYoshi5.TabStop = False
-        '
-        'picYoshi6
-        '
-        Me.picYoshi6.BackColor = System.Drawing.Color.White
-        Me.picYoshi6.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
-        Me.picYoshi6.Location = New System.Drawing.Point(482, 390)
-        Me.picYoshi6.Name = "picYoshi6"
-        Me.picYoshi6.Size = New System.Drawing.Size(35, 30)
-        Me.picYoshi6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picYoshi6.TabIndex = 51
-        Me.picYoshi6.TabStop = False
+        Me.ImageList2.ImageStream = CType(resources.GetObject("ImageList2.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList2.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList2.Images.SetKeyName(0, "Player1 Counter")
+        Me.ImageList2.Images.SetKeyName(1, "Player2 counter")
         '
         'Form1
         '
@@ -627,18 +505,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Olive
         Me.ClientSize = New System.Drawing.Size(908, 661)
-        Me.Controls.Add(Me.picYoshi6)
-        Me.Controls.Add(Me.picYoshi5)
-        Me.Controls.Add(Me.picYoshi4)
-        Me.Controls.Add(Me.picYoshi3)
-        Me.Controls.Add(Me.picYoshi2)
-        Me.Controls.Add(Me.picYoshi1)
-        Me.Controls.Add(Me.picMario6)
-        Me.Controls.Add(Me.picMario5)
-        Me.Controls.Add(Me.picMario4)
-        Me.Controls.Add(Me.picMario3)
-        Me.Controls.Add(Me.picMario2)
-        Me.Controls.Add(Me.picMario1)
+        Me.Controls.Add(Me.picYoshi)
+        Me.Controls.Add(Me.picMario)
         Me.Controls.Add(Me.picPlayer2)
         Me.Controls.Add(Me.picPlayer1)
         Me.Controls.Add(Me.Label2)
@@ -686,18 +554,8 @@ Partial Class Form1
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMario1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMario2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMario3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMario4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMario5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picMario6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picYoshi1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picYoshi2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picYoshi3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picYoshi4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picYoshi5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picYoshi6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMario, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -746,16 +604,7 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents picPlayer1 As PictureBox
     Friend WithEvents picPlayer2 As PictureBox
-    Friend WithEvents picMario1 As PictureBox
-    Friend WithEvents picMario2 As PictureBox
-    Friend WithEvents picMario3 As PictureBox
-    Friend WithEvents picMario4 As PictureBox
-    Friend WithEvents picMario5 As PictureBox
-    Friend WithEvents picMario6 As PictureBox
-    Friend WithEvents picYoshi1 As PictureBox
-    Friend WithEvents picYoshi2 As PictureBox
-    Friend WithEvents picYoshi3 As PictureBox
-    Friend WithEvents picYoshi4 As PictureBox
-    Friend WithEvents picYoshi5 As PictureBox
-    Friend WithEvents picYoshi6 As PictureBox
+    Friend WithEvents picMario As PictureBox
+    Friend WithEvents picYoshi As PictureBox
+    Friend WithEvents ImageList2 As ImageList
 End Class
