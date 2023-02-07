@@ -25,8 +25,6 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btnPlayer1 = New System.Windows.Forms.Button()
-        Me.picDie1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TitleProgram = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.lblBlock1 = New System.Windows.Forms.Label()
@@ -59,13 +57,19 @@ Partial Class Form1
         Me.lblBlock27 = New System.Windows.Forms.Label()
         Me.lblBlock26 = New System.Windows.Forms.Label()
         Me.lblBlock25 = New System.Windows.Forms.Label()
-        Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.btnPlayer2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.picPlayer2 = New System.Windows.Forms.PictureBox()
+        Me.picPlayer1 = New System.Windows.Forms.PictureBox()
+        Me.picDie2 = New System.Windows.Forms.PictureBox()
+        Me.picDie1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.picPlayer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnPlayer1
@@ -73,33 +77,12 @@ Partial Class Form1
         Me.btnPlayer1.BackColor = System.Drawing.Color.Khaki
         Me.btnPlayer1.Font = New System.Drawing.Font("Mistral", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPlayer1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnPlayer1.Location = New System.Drawing.Point(593, 332)
+        Me.btnPlayer1.Location = New System.Drawing.Point(604, 332)
         Me.btnPlayer1.Name = "btnPlayer1"
         Me.btnPlayer1.Size = New System.Drawing.Size(97, 56)
         Me.btnPlayer1.TabIndex = 1
         Me.btnPlayer1.Text = "Roll Dice"
         Me.btnPlayer1.UseVisualStyleBackColor = False
-        '
-        'picDie1
-        '
-        Me.picDie1.BackColor = System.Drawing.Color.White
-        Me.picDie1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picDie1.Location = New System.Drawing.Point(603, 181)
-        Me.picDie1.Name = "picDie1"
-        Me.picDie1.Size = New System.Drawing.Size(97, 97)
-        Me.picDie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picDie1.TabIndex = 2
-        Me.picDie1.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.SnakenLadderGroup3.My.Resources.Resources.snakes_and_ladders_board
-        Me.PictureBox1.Location = New System.Drawing.Point(29, 64)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(458, 408)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'TitleProgram
         '
@@ -394,17 +377,6 @@ Partial Class Form1
         Me.lblBlock25.TabIndex = 33
         Me.lblBlock25.Visible = False
         '
-        'picDie2
-        '
-        Me.picDie2.BackColor = System.Drawing.Color.White
-        Me.picDie2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picDie2.Location = New System.Drawing.Point(734, 181)
-        Me.picDie2.Name = "picDie2"
-        Me.picDie2.Size = New System.Drawing.Size(97, 97)
-        Me.picDie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.picDie2.TabIndex = 35
-        Me.picDie2.TabStop = False
-        '
         'btnPlayer2
         '
         Me.btnPlayer2.BackColor = System.Drawing.Color.Khaki
@@ -439,12 +411,66 @@ Partial Class Form1
         Me.Label2.Text = "- Player 2 -"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'picPlayer2
+        '
+        Me.picPlayer2.Image = Global.SnakenLadderGroup3.My.Resources.Resources.img_chara_04_low
+        Me.picPlayer2.Location = New System.Drawing.Point(738, 408)
+        Me.picPlayer2.Name = "picPlayer2"
+        Me.picPlayer2.Size = New System.Drawing.Size(80, 64)
+        Me.picPlayer2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picPlayer2.TabIndex = 39
+        Me.picPlayer2.TabStop = False
+        '
+        'picPlayer1
+        '
+        Me.picPlayer1.Image = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
+        Me.picPlayer1.Location = New System.Drawing.Point(624, 408)
+        Me.picPlayer1.Name = "picPlayer1"
+        Me.picPlayer1.Size = New System.Drawing.Size(66, 64)
+        Me.picPlayer1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picPlayer1.TabIndex = 38
+        Me.picPlayer1.TabStop = False
+        '
+        'picDie2
+        '
+        Me.picDie2.BackColor = System.Drawing.Color.White
+        Me.picDie2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picDie2.Location = New System.Drawing.Point(734, 181)
+        Me.picDie2.Name = "picDie2"
+        Me.picDie2.Size = New System.Drawing.Size(97, 97)
+        Me.picDie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picDie2.TabIndex = 35
+        Me.picDie2.TabStop = False
+        '
+        'picDie1
+        '
+        Me.picDie1.BackColor = System.Drawing.Color.White
+        Me.picDie1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.picDie1.Location = New System.Drawing.Point(603, 181)
+        Me.picDie1.Name = "picDie1"
+        Me.picDie1.Size = New System.Drawing.Size(97, 97)
+        Me.picDie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picDie1.TabIndex = 2
+        Me.picDie1.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.SnakenLadderGroup3.My.Resources.Resources.snakes_and_ladders_board
+        Me.PictureBox1.Location = New System.Drawing.Point(29, 64)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(458, 408)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Olive
         Me.ClientSize = New System.Drawing.Size(908, 661)
+        Me.Controls.Add(Me.picPlayer2)
+        Me.Controls.Add(Me.picPlayer1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.picDie2)
@@ -485,9 +511,11 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.Text = "Snakes and Ladders"
+        CType(Me.picPlayer2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -534,4 +562,6 @@ Partial Class Form1
     Friend WithEvents btnPlayer2 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents picPlayer1 As PictureBox
+    Friend WithEvents picPlayer2 As PictureBox
 End Class
