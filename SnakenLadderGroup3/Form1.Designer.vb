@@ -93,7 +93,7 @@ Partial Class Form1
         Me.TitleProgram.BackColor = System.Drawing.Color.Transparent
         Me.TitleProgram.Font = New System.Drawing.Font("Mistral", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TitleProgram.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TitleProgram.Location = New System.Drawing.Point(551, 9)
+        Me.TitleProgram.Location = New System.Drawing.Point(572, 9)
         Me.TitleProgram.Name = "TitleProgram"
         Me.TitleProgram.Size = New System.Drawing.Size(324, 58)
         Me.TitleProgram.TabIndex = 1
