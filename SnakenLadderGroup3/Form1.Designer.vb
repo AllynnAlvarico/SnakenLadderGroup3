@@ -59,6 +59,7 @@ Partial Class Form1
         Me.lblBlock27 = New System.Windows.Forms.Label()
         Me.lblBlock26 = New System.Windows.Forms.Label()
         Me.lblBlock25 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -384,11 +385,21 @@ Partial Class Form1
         Me.lblBlock25.TabIndex = 33
         Me.lblBlock25.Visible = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(775, 131)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(98, 105)
+        Me.Button1.TabIndex = 34
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1061, 661)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TitleProgram)
         Me.Controls.Add(Me.lblBlock25)
         Me.Controls.Add(Me.lblBlock26)
@@ -469,4 +480,5 @@ Partial Class Form1
     Friend WithEvents lblBlock27 As Label
     Friend WithEvents lblBlock26 As Label
     Friend WithEvents lblBlock25 As Label
+    Friend WithEvents Button1 As Button
 End Class
