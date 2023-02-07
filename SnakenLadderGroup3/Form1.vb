@@ -1,9 +1,6 @@
 ﻿Public Class Form1
     Dim ClassDice As New Dice_Class
     Dim player_StartCondition As Integer = 6
-    Dim intScore As Integer
-
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
         Dice_Show1()
         setPlayer1(ClassDice.getDice())
@@ -60,7 +57,4 @@
             '.Location = New Point(39, 390) 'Starting Player 2(Yoshi)
         End If
     End Sub
-
-
-
 End Class
