@@ -1,5 +1,8 @@
-﻿Public Class Form1
+﻿Imports System.Runtime.InteropServices.WindowsRuntime
+
+Public Class Form1
     Public ClassDice As New Dice_Class
+    Public position As position
 
     Public player_Start As Integer
     Public player1_pos, player2_pos As Integer
@@ -10,7 +13,10 @@
         player1_pos = 0
         player2_pos = 0
         startCondition = False
+
     End Sub
+
+
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
@@ -58,12 +64,12 @@
 
     Public Sub setPlayer1(Dice As Integer)
         gameInit()
-
+        'playerPosition()
         If startCondition = False Then
             If Dice = player_Start Then
                 'MessageBox.Show("Player 1 rolled a 6 now counter")
                 picMario.Location = New Point(39, 390) 'Starting Player 1(Mario)
-                picMario.Visible = True
+                'picMario.Visible = True
                 'player1_pos += 0
                 startCondition = True
             End If

@@ -53,7 +53,7 @@ Partial Class Form1
         '
         Me.TitleProgram.BackColor = System.Drawing.Color.Transparent
         Me.TitleProgram.Font = New System.Drawing.Font("Constantia", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TitleProgram.Location = New System.Drawing.Point(20, 9)
+        Me.TitleProgram.Location = New System.Drawing.Point(484, 9)
         Me.TitleProgram.Name = "TitleProgram"
         Me.TitleProgram.Size = New System.Drawing.Size(248, 44)
         Me.TitleProgram.TabIndex = 1
@@ -72,7 +72,7 @@ Partial Class Form1
         '
         'btnRollDice2
         '
-        Me.btnRollDice2.Location = New System.Drawing.Point(604, 368)
+        Me.btnRollDice2.Location = New System.Drawing.Point(635, 368)
         Me.btnRollDice2.Name = "btnRollDice2"
         Me.btnRollDice2.Size = New System.Drawing.Size(97, 56)
         Me.btnRollDice2.TabIndex = 34
@@ -88,7 +88,6 @@ Partial Class Form1
         Me.picMario.Size = New System.Drawing.Size(30, 30)
         Me.picMario.TabIndex = 37
         Me.picMario.TabStop = False
-        Me.picMario.Visible = False
         '
         'picYoshi
         '
@@ -105,7 +104,7 @@ Partial Class Form1
         '
         Me.picDie2.BackColor = System.Drawing.Color.White
         Me.picDie2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picDie2.Location = New System.Drawing.Point(604, 248)
+        Me.picDie2.Location = New System.Drawing.Point(635, 248)
         Me.picDie2.Name = "picDie2"
         Me.picDie2.Size = New System.Drawing.Size(97, 97)
         Me.picDie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -137,7 +136,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1061, 661)
+        Me.ClientSize = New System.Drawing.Size(757, 486)
         Me.Controls.Add(Me.picMario)
         Me.Controls.Add(Me.picYoshi)
         Me.Controls.Add(Me.picDie2)
