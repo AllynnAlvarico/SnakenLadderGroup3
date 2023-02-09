@@ -27,7 +27,7 @@ Public Class Form1
         player2_pos = 0
         startCondition = False
     End Sub
-    Public Sub p1_pos()
+    Public Sub p1_pos() ' Update this point location
         p1_b1 = New Point(39, 390)
         p1_b2 = New Point(139, 390)
         p1_b3 = New Point(219, 387)
@@ -59,7 +59,7 @@ Public Class Form1
         p1_b29 = New Point(393, 37)
         p1_b30 = New Point(482, 37)
     End Sub
-    Public Sub p2_pos()
+    Public Sub p2_pos() ' Update this point location
         p2_b1 = New Point(39, 390)
         p2_b2 = New Point(139, 390)
         p2_b3 = New Point(219, 387)
