@@ -7,14 +7,53 @@ Public Class Form1
     Public player_Start As Integer
     Public player1_pos, player2_pos As Integer
     Public startCondition, playTurn As Boolean
+
+    Public p1_b1, p1_b2, p1_b3, p1_b4, p1_b5 As Point
+    Public p1_b6, p1_b7, p1_b8, p1_b9, p1_b10 As Point
+    Public p1_b11, p1_b12, p1_b13, p1_b14, p1_b15 As Point
+    Public p1_b16, p1_b17, p1_b18, p1_b19, p1_b20 As Point
+    Public p1_b21, p1_b22, p1_b23, p1_b24, p1_b25 As Point
+    Public p1_b26, p1_b27, p1_b28, p1_b29, p1_b30 As Point
     'Constructor/Initializer
     Public Sub gameInit()
         player_Start = 6
         player1_pos = 0
         player2_pos = 0
         startCondition = False
-
     End Sub
+    Public Sub p1_pos()
+        p1_b1 = New Point(39, 390)
+        p1_b2 = New Point(139, 390)
+        p1_b3 = New Point(219, 387)
+        p1_b4 = New Point(306, 390)
+        p1_b5 = New Point(392, 390)
+        p1_b6 = New Point(482, 394)
+        p1_b7 = New Point(483, 308)
+        p1_b8 = New Point(395, 304)
+        p1_b9 = New Point(313, 300)
+        p1_b10 = New Point(227, 303)
+        p1_b11 = New Point(137, 301)
+        p1_b12 = New Point(48, 304)
+        p1_b13 = New Point(48, 213)
+        p1_b14 = New Point(134, 220)
+        p1_b15 = New Point(221, 215)
+        p1_b16 = New Point(303, 218)
+        p1_b17 = New Point(394, 214)
+        p1_b18 = New Point(486, 216)
+        p1_b19 = New Point(485, 124)
+        p1_b20 = New Point(392, 125)
+        p1_b21 = New Point(307, 124)
+        p1_b22 = New Point(218, 124)
+        p1_b23 = New Point(136, 126)
+        p1_b24 = New Point(43, 124)
+        p1_b25 = New Point(43, 37)
+        p1_b26 = New Point(134, 37)
+        p1_b27 = New Point(221, 37)
+        p1_b28 = New Point(305, 37)
+        p1_b29 = New Point(393, 37)
+        p1_b30 = New Point(482, 37)
+    End Sub
+
 
 
 
@@ -64,12 +103,13 @@ Public Class Form1
 
     Public Sub setPlayer1(Dice As Integer)
         gameInit()
+        p1_pos()
         'playerPosition()
         If startCondition = False Then
             If Dice = player_Start Then
                 'MessageBox.Show("Player 1 rolled a 6 now counter")
-                picMario.Location = New Point(39, 390) 'Starting Player 1(Mario)
-                'picMario.Visible = True
+                picMario.Location = p1_b10 'Starting Player 1(Mario)
+                picMario.Visible = True
                 'player1_pos += 0
                 startCondition = True
             End If

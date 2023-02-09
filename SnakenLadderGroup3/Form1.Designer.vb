@@ -88,6 +88,7 @@ Partial Class Form1
         Me.picMario.Size = New System.Drawing.Size(30, 30)
         Me.picMario.TabIndex = 37
         Me.picMario.TabStop = False
+        Me.picMario.Visible = False
         '
         'picYoshi
         '
