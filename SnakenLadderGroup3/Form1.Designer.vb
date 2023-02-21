@@ -32,12 +32,12 @@ Partial Class Form1
         Me.picYoshi = New System.Windows.Forms.PictureBox()
         Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.picBoard = New System.Windows.Forms.PictureBox()
         CType(Me.picMario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBoard, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnRollDice
@@ -130,15 +130,15 @@ Partial Class Form1
         Me.picDie1.TabIndex = 2
         Me.picDie1.TabStop = False
         '
-        'PictureBox1
+        'picBoard
         '
-        Me.PictureBox1.Image = Global.SnakenLadderGroup3.My.Resources.Resources.snakes_and_ladders_board
-        Me.PictureBox1.Location = New System.Drawing.Point(20, 93)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(439, 368)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.picBoard.Image = Global.SnakenLadderGroup3.My.Resources.Resources.snakes_and_ladders_board
+        Me.picBoard.Location = New System.Drawing.Point(20, 93)
+        Me.picBoard.Name = "picBoard"
+        Me.picBoard.Size = New System.Drawing.Size(439, 368)
+        Me.picBoard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picBoard.TabIndex = 0
+        Me.picBoard.TabStop = False
         '
         'Form1
         '
@@ -153,19 +153,19 @@ Partial Class Form1
         Me.Controls.Add(Me.TitleProgram)
         Me.Controls.Add(Me.picDie1)
         Me.Controls.Add(Me.btnRollDice)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picBoard)
         Me.Name = "Form1"
         Me.Text = "Snake and Ladder"
         CType(Me.picMario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBoard, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents picBoard As PictureBox
 
     Friend WithEvents TitleProgram As Label
 
