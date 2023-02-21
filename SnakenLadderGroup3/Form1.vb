@@ -65,6 +65,12 @@ Public Class Form1
         End Select
     End Sub
 
+    Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
+
+        Application.Restart()
+
+    End Sub
+
     Public Sub setPlayer1(Dice As Integer)
         gameInit()
         'playerPosition()
