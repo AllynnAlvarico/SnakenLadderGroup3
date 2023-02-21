@@ -58,11 +58,11 @@ Partial Class Form1
         Me.TitleProgram.BackColor = System.Drawing.Color.Transparent
         Me.TitleProgram.Font = New System.Drawing.Font("Harlow Solid Italic", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TitleProgram.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TitleProgram.Location = New System.Drawing.Point(457, 9)
+        Me.TitleProgram.Location = New System.Drawing.Point(448, 9)
         Me.TitleProgram.Name = "TitleProgram"
-        Me.TitleProgram.Size = New System.Drawing.Size(427, 71)
+        Me.TitleProgram.Size = New System.Drawing.Size(436, 71)
         Me.TitleProgram.TabIndex = 1
-        Me.TitleProgram.Text = "Snakes and Ladder"
+        Me.TitleProgram.Text = "Snakes and Ladders"
         '
         'ImageList1
         '
