@@ -84,6 +84,13 @@ Public Class Form1
         End If
 
     End Sub
+
+    Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
+
+        Application.Restart()
+
+    End Sub
+
     Public Sub setPlayer1(Dice As Integer)
         'playerPosition()
         If startCondition = False Then
