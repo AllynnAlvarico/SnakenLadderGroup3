@@ -42,22 +42,26 @@ Partial Class Form1
         '
         'btnRollDice
         '
-        Me.btnRollDice.Location = New System.Drawing.Point(490, 368)
+        Me.btnRollDice.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnRollDice.Font = New System.Drawing.Font("Harlow Solid Italic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRollDice.ForeColor = System.Drawing.Color.OliveDrab
+        Me.btnRollDice.Location = New System.Drawing.Point(541, 368)
         Me.btnRollDice.Name = "btnRollDice"
         Me.btnRollDice.Size = New System.Drawing.Size(97, 56)
         Me.btnRollDice.TabIndex = 1
         Me.btnRollDice.Text = "Roll Dice (p.1)"
-        Me.btnRollDice.UseVisualStyleBackColor = True
+        Me.btnRollDice.UseVisualStyleBackColor = False
         '
         'TitleProgram
         '
         Me.TitleProgram.BackColor = System.Drawing.Color.Transparent
-        Me.TitleProgram.Font = New System.Drawing.Font("Constantia", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TitleProgram.Location = New System.Drawing.Point(484, 9)
+        Me.TitleProgram.Font = New System.Drawing.Font("Harlow Solid Italic", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TitleProgram.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.TitleProgram.Location = New System.Drawing.Point(457, 9)
         Me.TitleProgram.Name = "TitleProgram"
-        Me.TitleProgram.Size = New System.Drawing.Size(248, 44)
+        Me.TitleProgram.Size = New System.Drawing.Size(427, 71)
         Me.TitleProgram.TabIndex = 1
-        Me.TitleProgram.Text = "Snake and Ladder"
+        Me.TitleProgram.Text = "Snakes and Ladder"
         '
         'ImageList1
         '
@@ -72,18 +76,21 @@ Partial Class Form1
         '
         'btnRollDice2
         '
-        Me.btnRollDice2.Location = New System.Drawing.Point(635, 368)
+        Me.btnRollDice2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnRollDice2.Font = New System.Drawing.Font("Harlow Solid Italic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRollDice2.ForeColor = System.Drawing.Color.OliveDrab
+        Me.btnRollDice2.Location = New System.Drawing.Point(714, 368)
         Me.btnRollDice2.Name = "btnRollDice2"
         Me.btnRollDice2.Size = New System.Drawing.Size(97, 56)
         Me.btnRollDice2.TabIndex = 34
         Me.btnRollDice2.Text = "Roll Dice (p.2)"
-        Me.btnRollDice2.UseVisualStyleBackColor = True
+        Me.btnRollDice2.UseVisualStyleBackColor = False
         '
         'picMario
         '
         Me.picMario.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
         Me.picMario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picMario.Location = New System.Drawing.Point(39, 390)
+        Me.picMario.Location = New System.Drawing.Point(39, 393)
         Me.picMario.Name = "picMario"
         Me.picMario.Size = New System.Drawing.Size(30, 30)
         Me.picMario.TabIndex = 37
@@ -94,7 +101,7 @@ Partial Class Form1
         '
         Me.picYoshi.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.pngdb_yoshi_image_super_mario_world_2_yoshis_island_new_bros_u_story_png_NpgibXJyGzyzcUtH3QHZRbeZx_t
         Me.picYoshi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picYoshi.Location = New System.Drawing.Point(39, 426)
+        Me.picYoshi.Location = New System.Drawing.Point(39, 424)
         Me.picYoshi.Name = "picYoshi"
         Me.picYoshi.Size = New System.Drawing.Size(30, 30)
         Me.picYoshi.TabIndex = 36
@@ -103,9 +110,9 @@ Partial Class Form1
         '
         'picDie2
         '
-        Me.picDie2.BackColor = System.Drawing.Color.White
+        Me.picDie2.BackColor = System.Drawing.Color.Cornsilk
         Me.picDie2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picDie2.Location = New System.Drawing.Point(635, 248)
+        Me.picDie2.Location = New System.Drawing.Point(714, 248)
         Me.picDie2.Name = "picDie2"
         Me.picDie2.Size = New System.Drawing.Size(97, 97)
         Me.picDie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -114,9 +121,9 @@ Partial Class Form1
         '
         'picDie1
         '
-        Me.picDie1.BackColor = System.Drawing.Color.White
+        Me.picDie1.BackColor = System.Drawing.Color.Cornsilk
         Me.picDie1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picDie1.Location = New System.Drawing.Point(490, 248)
+        Me.picDie1.Location = New System.Drawing.Point(541, 248)
         Me.picDie1.Name = "picDie1"
         Me.picDie1.Size = New System.Drawing.Size(97, 97)
         Me.picDie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -137,7 +144,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(757, 486)
+        Me.BackColor = System.Drawing.Color.Khaki
+        Me.ClientSize = New System.Drawing.Size(896, 486)
         Me.Controls.Add(Me.picMario)
         Me.Controls.Add(Me.picYoshi)
         Me.Controls.Add(Me.picDie2)

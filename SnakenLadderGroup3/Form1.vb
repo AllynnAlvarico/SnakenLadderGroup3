@@ -6,9 +6,8 @@ Public Class Form1
     Public player_Start As Integer
     Public player1_pos, player2_pos As Integer
     Public startCondition, playTurn As Boolean
-    Dim p1_b As Point() = {New Point(39, 390), New Point(139, 390), New Point(219, 387), New Point(306, 390), New Point(392, 390), New Point(482, 394), New Point(483, 308), New Point(395, 304), New Point(313, 300), New Point(227, 303), New Point(137, 301), New Point(48, 304), New Point(48, 213), New Point(134, 220), New Point(221, 215), New Point(303, 218), New Point(394, 214), New Point(486, 216), New Point(485, 124), New Point(392, 125), New Point(307, 124), New Point(218, 124), New Point(136, 126), New Point(43, 124), New Point(43, 37), New Point(134, 37), New Point(221, 37), New Point(305, 37), New Point(393, 37), New Point(482, 37)}
-    Dim p2_b As Point() = {New Point(39, 390), New Point(139, 390), New Point(219, 387), New Point(306, 390), New Point(392, 390), New Point(482, 394), New Point(483, 308), New Point(395, 304), New Point(313, 300), New Point(227, 303), New Point(137, 301), New Point(48, 304), New Point(48, 213), New Point(134, 220), New Point(221, 215), New Point(303, 218), New Point(394, 214), New Point(486, 216), New Point(485, 124), New Point(392, 125), New Point(307, 124), New Point(218, 124), New Point(136, 126), New Point(43, 124), New Point(43, 37), New Point(134, 37), New Point(221, 37), New Point(305, 37), New Point(393, 37), New Point(482, 37)}
-
+    Dim p1_b As Point() = {New Point(39, 393), New Point(114, 393), New Point(188, 393), New Point(260, 393), New Point(333, 393), New Point(407, 393), New Point(407, 320), New Point(333, 320), New Point(260, 320), New Point(188, 320), New Point(114, 320), New Point(39, 320), New Point(39, 248), New Point(114, 248), New Point(188, 248), New Point(260, 248), New Point(333, 248), New Point(407, 248), New Point(407, 175), New Point(333, 175), New Point(260, 175), New Point(188, 175), New Point(114, 175), New Point(39, 175), New Point(39, 99), New Point(114, 99), New Point(188, 99), New Point(260, 99), New Point(333, 99), New Point(407, 99)}
+    Dim p2_b As Point() = {New Point(39, 424), New Point(114, 424), New Point(188, 424), New Point(260, 424), New Point(333, 424), New Point(407, 424), New Point(407, 351), New Point(333, 351), New Point(260, 351), New Point(188, 351), New Point(114, 351), New Point(39, 351), New Point(39, 279), New Point(114, 279), New Point(188, 279), New Point(260, 279), New Point(333, 279), New Point(407, 279), New Point(407, 206), New Point(333, 206), New Point(260, 206), New Point(188, 206), New Point(114, 206), New Point(39, 206), New Point(39, 130), New Point(114, 130), New Point(188, 130), New Point(260, 130), New Point(333, 130), New Point(407, 130)}
     'Constructor/Initializer
     Public Sub gameInit()
         player_Start = 6
@@ -64,7 +63,7 @@ Public Class Form1
         'playerPosition()
         If startCondition = False Then
             If Dice = player_Start Then
-                'MessageBox.Show("Player 1 rolled a 6 now counter")
+                MessageBox.Show("Player 1 rolled a 6 now counter")
                 picMario.Location = p1_b(0) 'Starting Player 1(Mario)
                 picMario.Visible = True
                 'player1_pos += 0
