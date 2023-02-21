@@ -12,4 +12,23 @@
         'Console.WriteLine(intDie1)
         Return intDie1
     End Function
+
+    Public Sub rolledDice(img As PictureBox, diceNum As Integer, imgList As ImageList)
+        Select Case diceNum
+            Case 1
+                img.Image = imgList.Images("dice1.JPG")
+            Case 2
+                img.Image = imgList.Images("dice2.JPG")
+            Case 3
+                img.Image = imgList.Images("dice3.JPG")
+            Case 4
+                img.Image = imgList.Images("dice4.JPG")
+            Case 5
+                img.Image = imgList.Images("dice5.JPG")
+            Case 6
+                img.Image = imgList.Images("dice6.JPG")
+        End Select
+
+    End Sub
+
 End Class
