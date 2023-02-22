@@ -3,8 +3,10 @@
 Public Class Form1
     Public objDice As New Dice_Class
     Public boardCondition As New conditions
+    'I assigned the diceValue to hold the objDice.getDice to be called easily and remember it easily
+    Public diceValue As Integer = objDice.getDice()
+
     Public player_Start As Integer
-    'Public Game_is_valid As Boolean
     Public player1_Score, player2_Score As Integer
     Public marioCondition, yoshiCondition, playerTurn As Boolean
     Dim p1_b As Point() = {New Point(39, 393), New Point(114, 393), New Point(188, 393), New Point(260, 393), New Point(333, 393), New Point(407, 393), New Point(407, 320), New Point(333, 320), New Point(260, 320), New Point(188, 320), New Point(114, 320), New Point(39, 320), New Point(39, 248), New Point(114, 248), New Point(188, 248), New Point(260, 248), New Point(333, 248), New Point(407, 248), New Point(407, 175), New Point(333, 175), New Point(260, 175), New Point(188, 175), New Point(114, 175), New Point(39, 175), New Point(39, 99), New Point(114, 99), New Point(188, 99), New Point(260, 99), New Point(333, 99), New Point(407, 99)}
@@ -18,11 +20,13 @@ Public Class Form1
     'Constructor/Initializer
     Public Sub New()
         InitializeComponent()
+        ''''boardCondition.ladderCondition()
         player_Start = 6
         player1_Score = 0
         player2_Score = 0
         marioCondition = False
         yoshiCondition = False
+
     End Sub
     '"ByRef" or Pass by Reference is to enable to change the variable by using or passing an arguement
     '"ByVal" or Pass by Value is to change the actual value of a property or variable
@@ -38,12 +42,12 @@ Public Class Form1
             End If
         End If
     End Sub
-    Public Sub gameLogic(cond As Boolean, ByRef playerScore As Integer, playerCounter As PictureBox, pointsArray() As Point)
+    Public Sub gameLogic(cond As Boolean, ByRef playerScore As Integer, ByRef playerCounter As PictureBox, pointsArray() As Point)
         If cond = True Then
-            playerScore = setPlayerScore(playerScore, objDice.getDice)
+            playerScore = setPlayerScore(playerScore, diceValue)
             If playerScore <= 29 Then
                 Player_Position(playerCounter, pointsArray(playerScore), playerScore)
-
+                ''''boardCondition.gameLadder(playerScore, playerCounter, pointsArray(playerScore))
             Else
                 MessageBox.Show("player 1 win")
                 playerCounter.Location = pointsArray(29)
@@ -52,6 +56,7 @@ Public Class Form1
         End If
         Console.WriteLine(player1_Score)
     End Sub
+
 
     'function
     'setting the players score of the dice roll
@@ -78,11 +83,14 @@ Public Class Form1
         '"picDie1" = getting the property name of the PictureBox in the Design
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
-        objDice.rolledDice(picDie1, objDice.getDice, ImageList1)
+        objDice.setPictureDice(picDie1, diceValue, ImageList1)
+        Console.WriteLine("Diced Rolled: " & diceValue)
+
         '======================================================================================'
         gameLogic(marioCondition, player1_Score, picMario, p1_b)
-        setPlayerCondition(objDice.getDice(), picMario, p1_b(0), marioCondition)
+        setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition)
 
+        'picMario.Location = p1_b(player1_Score)
 
 
 
@@ -93,10 +101,12 @@ Public Class Form1
         '"picDie2" = getting the property name of the PictureBox in the Design
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
-        objDice.rolledDice(picDie2, objDice.getDice, ImageList1)
+        objDice.setPictureDice(picDie2, objDice.getDice, ImageList1)
         '======================================================================================'
         gameLogic(yoshiCondition, player2_Score, picYoshi, p2_b)
         setPlayerCondition(objDice.getDice(), picYoshi, p2_b(0), yoshiCondition)
+
+        'picYoshi.Location = p2_b(player2_Score)
 
     End Sub
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click

@@ -13,7 +13,8 @@
         Return intDie1
     End Function
 
-    Public Sub rolledDice(img As PictureBox, diceNum As Integer, imgList As ImageList)
+    Public Sub setPictureDice(img As PictureBox, diceNum As Integer, imgList As ImageList)
+
         Select Case diceNum
             Case 1
                 img.Image = imgList.Images("dice1.JPG")
