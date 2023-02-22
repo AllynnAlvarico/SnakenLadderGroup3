@@ -28,7 +28,6 @@
             Case 6
                 img.Image = imgList.Images("dice6.JPG")
         End Select
-
     End Sub
 
 End Class

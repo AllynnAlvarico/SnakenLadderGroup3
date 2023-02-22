@@ -45,7 +45,6 @@ Public Class Form1
                 Player_Position(playerCounter, pointsArray(playerScore), playerScore)
 
             Else
-
                 MessageBox.Show("player 1 win")
                 playerCounter.Location = pointsArray(29)
                 Console.WriteLine("Player 1 wins")
@@ -80,9 +79,11 @@ Public Class Form1
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
         objDice.rolledDice(picDie1, objDice.getDice, ImageList1)
-
+        '======================================================================================'
         gameLogic(marioCondition, player1_Score, picMario, p1_b)
         setPlayerCondition(objDice.getDice(), picMario, p1_b(0), marioCondition)
+
+
 
 
     End Sub
@@ -93,9 +94,10 @@ Public Class Form1
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
         objDice.rolledDice(picDie2, objDice.getDice, ImageList1)
-
+        '======================================================================================'
         gameLogic(yoshiCondition, player2_Score, picYoshi, p2_b)
         setPlayerCondition(objDice.getDice(), picYoshi, p2_b(0), yoshiCondition)
+
     End Sub
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         'this line restarts the windows page of the game.
