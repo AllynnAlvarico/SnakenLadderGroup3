@@ -3,8 +3,7 @@
 Public Class Form1
     Public objDice As New Dice_Class
     Public boardCondition As New conditions
-    'I assigned the diceValue to hold the objDice.getDice to be called easily and remember it easily
-    Public diceValue As Integer = objDice.getDice()
+
 
     Public player_Start As Integer
     Public player1_Score, player2_Score As Integer
@@ -20,7 +19,7 @@ Public Class Form1
     'Constructor/Initializer
     Public Sub New()
         InitializeComponent()
-        ''''boardCondition.ladderCondition()
+        boardCondition.ladderCondition()
         player_Start = 6
         player1_Score = 0
         player2_Score = 0
@@ -44,17 +43,16 @@ Public Class Form1
     End Sub
     Public Sub gameLogic(cond As Boolean, ByRef playerScore As Integer, ByRef playerCounter As PictureBox, pointsArray() As Point)
         If cond = True Then
-            playerScore = setPlayerScore(playerScore, diceValue)
+            playerScore = setPlayerScore(playerScore, objDice.getDice)
             If playerScore <= 29 Then
                 Player_Position(playerCounter, pointsArray(playerScore), playerScore)
-                ''''boardCondition.gameLadder(playerScore, playerCounter, pointsArray(playerScore))
+                boardCondition.gameLadder(playerScore, playerCounter, pointsArray(playerScore))
             Else
-                MessageBox.Show("player 1 win")
+                MessageBox.Show("player 1 win") 'needs to change this message box
                 playerCounter.Location = pointsArray(29)
                 Console.WriteLine("Player 1 wins")
             End If
         End If
-        Console.WriteLine(player1_Score)
     End Sub
 
 
@@ -67,6 +65,15 @@ Public Class Form1
         'this "playerScore" Assigns the actual score of the player
         'when the "Dice" is rolled it gets added to the "playerScore"
         player_score += Dice
+
+        '======================================================================================'
+
+        'If (player_score <= 30) Then
+        '    player_score += Dice
+        'Else
+        '    player_score = 30
+        'End If
+        '======================================================================================'
         'this returns the value of the "playerScore"
         Return player_score
     End Function
@@ -78,14 +85,17 @@ Public Class Form1
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
+        'I assigned the diceValue to hold the objDice.getDice to be called easily and remember it easily
+        Dim diceValue As Integer = objDice.getDice()
+        '======================================================================================'
         'this is the class and method for rolling and showing the dice
         'arguements<PictureBox, Dice, ImageList>
         '"picDie1" = getting the property name of the PictureBox in the Design
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
         objDice.setPictureDice(picDie1, diceValue, ImageList1)
-        Console.WriteLine("Diced Rolled: " & diceValue)
-
+        Console.WriteLine("player 1 Diced Rolled: " & diceValue)
+        Console.WriteLine("Player 1 Score: " & player1_Score)
         '======================================================================================'
         gameLogic(marioCondition, player1_Score, picMario, p1_b)
         setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition)
@@ -96,12 +106,17 @@ Public Class Form1
 
     End Sub
     Private Sub btnRollDice2_Click(sender As Object, e As EventArgs) Handles btnRollDice2.Click
+        'I assigned the diceValue to hold the objDice.getDice to be called easily and remember it easily
+        Dim diceValue As Integer = objDice.getDice()
+        '======================================================================================'
         'this is the class and method for rolling and showing the dice
         'arguements<PictureBox, Dice, ImageList>
         '"picDie2" = getting the property name of the PictureBox in the Design
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
         objDice.setPictureDice(picDie2, objDice.getDice, ImageList1)
+        Console.WriteLine("player 2 Diced Rolled: " & diceValue)
+        Console.WriteLine("Player 2 Score: " & player2_Score)
         '======================================================================================'
         gameLogic(yoshiCondition, player2_Score, picYoshi, p2_b)
         setPlayerCondition(objDice.getDice(), picYoshi, p2_b(0), yoshiCondition)
