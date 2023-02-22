@@ -84,6 +84,7 @@ Public Class Form1
             player.Location = place
         End If
     End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
         'I assigned the diceValue to hold the objDice.getDice to be called easily and remember it easily
         Dim diceValue As Integer = objDice.getDice()
@@ -127,5 +128,9 @@ Public Class Form1
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         'this line restarts the windows page of the game.
         Application.Restart()
+    End Sub
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        'this line exits the user out of game
+        Application.Exit()
     End Sub
 End Class
