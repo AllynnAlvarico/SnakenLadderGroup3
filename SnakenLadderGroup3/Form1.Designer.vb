@@ -47,9 +47,10 @@ Partial Class Form1
         Me.btnRollDice.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnRollDice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRollDice.ForeColor = System.Drawing.Color.OliveDrab
-        Me.btnRollDice.Location = New System.Drawing.Point(541, 302)
+        Me.btnRollDice.Location = New System.Drawing.Point(721, 372)
+        Me.btnRollDice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnRollDice.Name = "btnRollDice"
-        Me.btnRollDice.Size = New System.Drawing.Size(97, 56)
+        Me.btnRollDice.Size = New System.Drawing.Size(129, 69)
         Me.btnRollDice.TabIndex = 1
         Me.btnRollDice.Text = "Roll Dice (p.1)"
         Me.btnRollDice.UseVisualStyleBackColor = False
@@ -57,11 +58,12 @@ Partial Class Form1
         'TitleProgram
         '
         Me.TitleProgram.BackColor = System.Drawing.Color.Transparent
-        Me.TitleProgram.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TitleProgram.Font = New System.Drawing.Font("Snap ITC", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TitleProgram.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TitleProgram.Location = New System.Drawing.Point(448, 9)
+        Me.TitleProgram.Location = New System.Drawing.Point(428, 11)
+        Me.TitleProgram.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TitleProgram.Name = "TitleProgram"
-        Me.TitleProgram.Size = New System.Drawing.Size(436, 71)
+        Me.TitleProgram.Size = New System.Drawing.Size(750, 87)
         Me.TitleProgram.TabIndex = 1
         Me.TitleProgram.Text = "Snakes and Ladders"
         '
@@ -81,9 +83,10 @@ Partial Class Form1
         Me.btnRollDice2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnRollDice2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRollDice2.ForeColor = System.Drawing.Color.OliveDrab
-        Me.btnRollDice2.Location = New System.Drawing.Point(714, 302)
+        Me.btnRollDice2.Location = New System.Drawing.Point(952, 372)
+        Me.btnRollDice2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnRollDice2.Name = "btnRollDice2"
-        Me.btnRollDice2.Size = New System.Drawing.Size(97, 56)
+        Me.btnRollDice2.Size = New System.Drawing.Size(129, 69)
         Me.btnRollDice2.TabIndex = 34
         Me.btnRollDice2.Text = "Roll Dice (p.2)"
         Me.btnRollDice2.UseVisualStyleBackColor = False
@@ -92,9 +95,10 @@ Partial Class Form1
         '
         Me.picMario.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
         Me.picMario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picMario.Location = New System.Drawing.Point(39, 393)
+        Me.picMario.Location = New System.Drawing.Point(52, 484)
+        Me.picMario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picMario.Name = "picMario"
-        Me.picMario.Size = New System.Drawing.Size(30, 30)
+        Me.picMario.Size = New System.Drawing.Size(40, 37)
         Me.picMario.TabIndex = 37
         Me.picMario.TabStop = False
         Me.picMario.Visible = False
@@ -103,9 +107,10 @@ Partial Class Form1
         '
         Me.picYoshi.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.pngdb_yoshi_image_super_mario_world_2_yoshis_island_new_bros_u_story_png_NpgibXJyGzyzcUtH3QHZRbeZx_t
         Me.picYoshi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picYoshi.Location = New System.Drawing.Point(39, 424)
+        Me.picYoshi.Location = New System.Drawing.Point(52, 522)
+        Me.picYoshi.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picYoshi.Name = "picYoshi"
-        Me.picYoshi.Size = New System.Drawing.Size(30, 30)
+        Me.picYoshi.Size = New System.Drawing.Size(40, 37)
         Me.picYoshi.TabIndex = 36
         Me.picYoshi.TabStop = False
         Me.picYoshi.Visible = False
@@ -114,9 +119,10 @@ Partial Class Form1
         '
         Me.picDie2.BackColor = System.Drawing.Color.Cornsilk
         Me.picDie2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picDie2.Location = New System.Drawing.Point(714, 173)
+        Me.picDie2.Location = New System.Drawing.Point(952, 213)
+        Me.picDie2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picDie2.Name = "picDie2"
-        Me.picDie2.Size = New System.Drawing.Size(97, 97)
+        Me.picDie2.Size = New System.Drawing.Size(128, 118)
         Me.picDie2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picDie2.TabIndex = 35
         Me.picDie2.TabStop = False
@@ -125,9 +131,10 @@ Partial Class Form1
         '
         Me.picDie1.BackColor = System.Drawing.Color.Cornsilk
         Me.picDie1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.picDie1.Location = New System.Drawing.Point(541, 173)
+        Me.picDie1.Location = New System.Drawing.Point(721, 213)
+        Me.picDie1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picDie1.Name = "picDie1"
-        Me.picDie1.Size = New System.Drawing.Size(97, 97)
+        Me.picDie1.Size = New System.Drawing.Size(128, 118)
         Me.picDie1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picDie1.TabIndex = 2
         Me.picDie1.TabStop = False
@@ -135,9 +142,10 @@ Partial Class Form1
         'picBoard
         '
         Me.picBoard.Image = Global.SnakenLadderGroup3.My.Resources.Resources.snakes_and_ladders_board
-        Me.picBoard.Location = New System.Drawing.Point(20, 93)
+        Me.picBoard.Location = New System.Drawing.Point(27, 114)
+        Me.picBoard.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picBoard.Name = "picBoard"
-        Me.picBoard.Size = New System.Drawing.Size(439, 368)
+        Me.picBoard.Size = New System.Drawing.Size(585, 453)
         Me.picBoard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picBoard.TabIndex = 0
         Me.picBoard.TabStop = False
@@ -147,9 +155,10 @@ Partial Class Form1
         Me.btnRestart.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRestart.ForeColor = System.Drawing.Color.OliveDrab
-        Me.btnRestart.Location = New System.Drawing.Point(541, 393)
+        Me.btnRestart.Location = New System.Drawing.Point(721, 484)
+        Me.btnRestart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnRestart.Name = "btnRestart"
-        Me.btnRestart.Size = New System.Drawing.Size(97, 56)
+        Me.btnRestart.Size = New System.Drawing.Size(129, 69)
         Me.btnRestart.TabIndex = 38
         Me.btnRestart.Text = "Restart"
         Me.btnRestart.UseVisualStyleBackColor = False
@@ -159,19 +168,20 @@ Partial Class Form1
         Me.btnExit.BackColor = System.Drawing.Color.LightBlue
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.OliveDrab
-        Me.btnExit.Location = New System.Drawing.Point(714, 393)
+        Me.btnExit.Location = New System.Drawing.Point(952, 484)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(97, 56)
+        Me.btnExit.Size = New System.Drawing.Size(129, 69)
         Me.btnExit.TabIndex = 39
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Khaki
-        Me.ClientSize = New System.Drawing.Size(896, 486)
+        Me.ClientSize = New System.Drawing.Size(1195, 598)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnRestart)
         Me.Controls.Add(Me.picMario)
@@ -182,6 +192,7 @@ Partial Class Form1
         Me.Controls.Add(Me.picDie1)
         Me.Controls.Add(Me.btnRollDice)
         Me.Controls.Add(Me.picBoard)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Snake and Ladder"
         CType(Me.picMario, System.ComponentModel.ISupportInitialize).EndInit()
