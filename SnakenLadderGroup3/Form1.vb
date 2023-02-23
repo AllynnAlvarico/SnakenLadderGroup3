@@ -65,7 +65,6 @@ Public Class Form1
         'this "playerScore" Assigns the actual score of the player
         'when the "Dice" is rolled it gets added to the "playerScore"
         player_score += Dice
-
         '======================================================================================'
 
         'If (player_score <= 30) Then

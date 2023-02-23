@@ -3,7 +3,20 @@
     'Ladder Y: 3-22: (188, 424)-(188, 206), 5-8: (333, 424)-(333, 351), 11-26: (114, 351)-(114, 130), 20-29: (333, 206)-(333, 130)
     'Snakes M: 27-1: (188, 99)-(39, 393), 21-9: (260, 175)-(260, 320), 19-7: (407, 175)-(407, 320), 17-4: (333, 248)-(260, 393)
     'Snakes Y: 27-1: (188, 130)-(39, 424), 21-9: (260, 206)-(260, 351), 19-7: (407, 206)-(407, 351), 17-4: (333, 279)-(260, 424)
-    Dim effectBox As New Dictionary(Of Integer, Integer)
+    Dim effectBox As New Dictionary(Of Integer, Integer) From {
+        {2, 21},
+        {4, 7},
+        {10, 25},
+        {19, 28},
+        {26, 1},
+        {20, 8},
+        {18, 6},
+        {16, 3}
+    }
+    'Snake Conditions
+    'Ladder Conditions
+    'subtracted 1 to the keys and values inorder to connect with the points array that I have declared
+
     Public Sub ladderCondition()
         'Ladder Conditions
         'subtracted 1 to the keys and values inorder to connect with the points array that I have declared
