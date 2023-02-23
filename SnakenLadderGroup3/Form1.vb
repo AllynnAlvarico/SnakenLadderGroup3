@@ -99,15 +99,15 @@ Public Class Form1
         '"picDie1" = getting the property name of the PictureBox in the Design
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
-        objDice.setPictureDice(picDie1, diceValue, ImageList1)
-        Console.WriteLine("player 1 Diced Rolled: " & diceValue)
-        Console.WriteLine("Player 1 Score: " & player1_Score)
-        '======================================================================================'
-        gameLogic(marioCondition, player1_Score, picMario, p1_b, p1Win)
-        setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition, p1StartMess)
+        'objDice.setPictureDice(picDie1, diceValue, ImageList1)
+        'Console.WriteLine("player 1 Diced Rolled: " & diceValue)
+        'Console.WriteLine("Player 1 Score: " & player1_Score)
+        ''======================================================================================'
+        'gameLogic(marioCondition, player1_Score, picMario, p1_b, p1Win)
+        'setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition, p1StartMess)
 
         'picMario.Location = p1_b(player1_Score)
-
+        btnPlayAgain()
 
 
     End Sub
@@ -137,5 +137,15 @@ Public Class Form1
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         'this line exits the user out of game
         Application.Exit()
+    End Sub
+    Public Sub btnPlayAgain()
+        Dim result As DialogResult = MessageBox.Show("do you want to play again", "player won", MessageBoxButtons.YesNoCancel)
+        If result = DialogResult.Cancel Then
+
+        ElseIf result = DialogResult.No Then
+            Application.Exit()
+        ElseIf result = DialogResult.Yes Then
+            Application.Restart()
+        End If
     End Sub
 End Class
