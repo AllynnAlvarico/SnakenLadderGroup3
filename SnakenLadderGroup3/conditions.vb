@@ -13,10 +13,6 @@
         {18, 6},
         {16, 3}
     }
-    'Snake Conditions
-    'Ladder Conditions
-    'subtracted 1 to the keys and values inorder to connect with the points array that I have declared
-
     Public Sub ladderCondition()
         'Ladder Conditions
         'subtracted 1 to the keys and values inorder to connect with the points array that I have declared
