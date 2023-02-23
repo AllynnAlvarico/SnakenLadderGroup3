@@ -63,7 +63,7 @@ Partial Class Form1
         Me.TitleProgram.Location = New System.Drawing.Point(428, 11)
         Me.TitleProgram.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.TitleProgram.Name = "TitleProgram"
-        Me.TitleProgram.Size = New System.Drawing.Size(750, 87)
+        Me.TitleProgram.Size = New System.Drawing.Size(750, 99)
         Me.TitleProgram.TabIndex = 1
         Me.TitleProgram.Text = "Snakes and Ladders"
         '

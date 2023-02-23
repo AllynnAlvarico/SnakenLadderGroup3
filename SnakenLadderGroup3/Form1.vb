@@ -56,6 +56,7 @@ Public Class Form1
                 MessageBox.Show(WMessage) 'needs to change this message box
                 playerCounter.Location = pointsArray(29)
                 Console.WriteLine(WMessage)
+                'btnPlayAgain()
 
             End If
         End If
@@ -99,15 +100,15 @@ Public Class Form1
         '"picDie1" = getting the property name of the PictureBox in the Design
         '"ImageList1" = getting the property name of the Image List in the Design
         '"objDice.getDice()" = getting the random number from the class file called "Dice_Class"
-        'objDice.setPictureDice(picDie1, diceValue, ImageList1)
-        'Console.WriteLine("player 1 Diced Rolled: " & diceValue)
-        'Console.WriteLine("Player 1 Score: " & player1_Score)
+        objDice.setPictureDice(picDie1, diceValue, ImageList1)
+        Console.WriteLine("player 1 Diced Rolled: " & diceValue)
+        Console.WriteLine("Player 1 Score: " & player1_Score)
         ''======================================================================================'
-        'gameLogic(marioCondition, player1_Score, picMario, p1_b, p1Win)
-        'setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition, p1StartMess)
+        gameLogic(marioCondition, player1_Score, picMario, p1_b, p1Win)
+        setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition, p1StartMess)
 
         'picMario.Location = p1_b(player1_Score)
-        btnPlayAgain()
+
 
 
     End Sub
