@@ -133,6 +133,36 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Luigi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Luigi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Mario() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Mario", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Peach() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Peach", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property pngdb_yoshi_image_super_mario_world_2_yoshis_island_new_bros_u_story_png_NpgibXJyGzyzcUtH3QHZRbeZx_t() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pngdb-yoshi-image-super-mario-world-2-yoshis-island-new-bros-u-story-png-NpgibXJy"& _ 
@@ -157,6 +187,16 @@ Namespace My.Resources
         Friend ReadOnly Property snakes_and_ladders_board() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("snakes and ladders board", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Yoshi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Yoshi", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

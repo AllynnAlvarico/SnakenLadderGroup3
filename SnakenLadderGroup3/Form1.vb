@@ -97,8 +97,8 @@ Public Class Form1
         Console.WriteLine("player 1 Diced Rolled: " & diceValue)
         Console.WriteLine("Player 1 Score: " & player1_Score)
         '======================================================================================'
-        gameLogic(marioCondition, player1_Score, picMario, p1_b)
-        setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition)
+        gameLogic(marioCondition, player1_Score, player1, p1_b)
+        setPlayerCondition(diceValue, player1, p1_b(0), marioCondition)
 
         'picMario.Location = p1_b(player1_Score)
 
@@ -118,8 +118,8 @@ Public Class Form1
         Console.WriteLine("player 2 Diced Rolled: " & diceValue)
         Console.WriteLine("Player 2 Score: " & player2_Score)
         '======================================================================================'
-        gameLogic(yoshiCondition, player2_Score, picYoshi, p2_b)
-        setPlayerCondition(objDice.getDice(), picYoshi, p2_b(0), yoshiCondition)
+        gameLogic(yoshiCondition, player2_Score, player2, p2_b)
+        setPlayerCondition(objDice.getDice(), player2, p2_b(0), yoshiCondition)
 
         'picYoshi.Location = p2_b(player2_Score)
 

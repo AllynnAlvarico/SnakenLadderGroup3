@@ -82,6 +82,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="choose_Character.Designer.vb">
+      <DependentUpon>choose_Character.vb</DependentUpon>
+    </Compile>
+    <Compile Include="choose_Character.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +105,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="choose_Character.resx">
+      <DependentUpon>choose_Character.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +159,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\small-super-mario-game-character-png-29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Characters\Luigi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Characters\Mario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Characters\Peach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Characters\Yoshi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

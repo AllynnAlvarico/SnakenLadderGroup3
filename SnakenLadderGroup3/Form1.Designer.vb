@@ -28,14 +28,15 @@ Partial Class Form1
         Me.TitleProgram = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.btnRollDice2 = New System.Windows.Forms.Button()
-        Me.picMario = New System.Windows.Forms.PictureBox()
-        Me.picYoshi = New System.Windows.Forms.PictureBox()
+        Me.btnRestart = New System.Windows.Forms.Button()
+        Me.player1 = New System.Windows.Forms.PictureBox()
+        Me.player2 = New System.Windows.Forms.PictureBox()
         Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
         Me.picBoard = New System.Windows.Forms.PictureBox()
-        Me.btnRestart = New System.Windows.Forms.Button()
-        CType(Me.picMario, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.imgPlayerList = New System.Windows.Forms.ImageList(Me.components)
+        CType(Me.player1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.player2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBoard, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,27 +88,39 @@ Partial Class Form1
         Me.btnRollDice2.Text = "Roll Dice (p.2)"
         Me.btnRollDice2.UseVisualStyleBackColor = False
         '
-        'picMario
+        'btnRestart
         '
-        Me.picMario.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
-        Me.picMario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picMario.Location = New System.Drawing.Point(39, 393)
-        Me.picMario.Name = "picMario"
-        Me.picMario.Size = New System.Drawing.Size(30, 30)
-        Me.picMario.TabIndex = 37
-        Me.picMario.TabStop = False
-        Me.picMario.Visible = False
+        Me.btnRestart.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnRestart.Font = New System.Drawing.Font("Harlow Solid Italic", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRestart.ForeColor = System.Drawing.Color.OliveDrab
+        Me.btnRestart.Location = New System.Drawing.Point(628, 405)
+        Me.btnRestart.Name = "btnRestart"
+        Me.btnRestart.Size = New System.Drawing.Size(97, 56)
+        Me.btnRestart.TabIndex = 38
+        Me.btnRestart.Text = "Restart"
+        Me.btnRestart.UseVisualStyleBackColor = False
         '
-        'picYoshi
+        'player1
         '
-        Me.picYoshi.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.pngdb_yoshi_image_super_mario_world_2_yoshis_island_new_bros_u_story_png_NpgibXJyGzyzcUtH3QHZRbeZx_t
-        Me.picYoshi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picYoshi.Location = New System.Drawing.Point(39, 424)
-        Me.picYoshi.Name = "picYoshi"
-        Me.picYoshi.Size = New System.Drawing.Size(30, 30)
-        Me.picYoshi.TabIndex = 36
-        Me.picYoshi.TabStop = False
-        Me.picYoshi.Visible = False
+        Me.player1.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.small_super_mario_game_character_png_29
+        Me.player1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.player1.Location = New System.Drawing.Point(39, 393)
+        Me.player1.Name = "player1"
+        Me.player1.Size = New System.Drawing.Size(30, 30)
+        Me.player1.TabIndex = 37
+        Me.player1.TabStop = False
+        Me.player1.Visible = False
+        '
+        'player2
+        '
+        Me.player2.BackgroundImage = Global.SnakenLadderGroup3.My.Resources.Resources.pngdb_yoshi_image_super_mario_world_2_yoshis_island_new_bros_u_story_png_NpgibXJyGzyzcUtH3QHZRbeZx_t
+        Me.player2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.player2.Location = New System.Drawing.Point(39, 424)
+        Me.player2.Name = "player2"
+        Me.player2.Size = New System.Drawing.Size(30, 30)
+        Me.player2.TabIndex = 36
+        Me.player2.TabStop = False
+        Me.player2.Visible = False
         '
         'picDie2
         '
@@ -141,17 +154,14 @@ Partial Class Form1
         Me.picBoard.TabIndex = 0
         Me.picBoard.TabStop = False
         '
-        'btnRestart
+        'imgPlayerList
         '
-        Me.btnRestart.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnRestart.Font = New System.Drawing.Font("Harlow Solid Italic", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRestart.ForeColor = System.Drawing.Color.OliveDrab
-        Me.btnRestart.Location = New System.Drawing.Point(628, 405)
-        Me.btnRestart.Name = "btnRestart"
-        Me.btnRestart.Size = New System.Drawing.Size(97, 56)
-        Me.btnRestart.TabIndex = 38
-        Me.btnRestart.Text = "Restart"
-        Me.btnRestart.UseVisualStyleBackColor = False
+        Me.imgPlayerList.ImageStream = CType(resources.GetObject("imgPlayerList.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.imgPlayerList.TransparentColor = System.Drawing.Color.Transparent
+        Me.imgPlayerList.Images.SetKeyName(0, "Luigi.png")
+        Me.imgPlayerList.Images.SetKeyName(1, "Mario.png")
+        Me.imgPlayerList.Images.SetKeyName(2, "Peach.png")
+        Me.imgPlayerList.Images.SetKeyName(3, "Yoshi.png")
         '
         'Form1
         '
@@ -160,8 +170,8 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.Khaki
         Me.ClientSize = New System.Drawing.Size(896, 486)
         Me.Controls.Add(Me.btnRestart)
-        Me.Controls.Add(Me.picMario)
-        Me.Controls.Add(Me.picYoshi)
+        Me.Controls.Add(Me.player1)
+        Me.Controls.Add(Me.player2)
         Me.Controls.Add(Me.picDie2)
         Me.Controls.Add(Me.btnRollDice2)
         Me.Controls.Add(Me.TitleProgram)
@@ -170,8 +180,8 @@ Partial Class Form1
         Me.Controls.Add(Me.picBoard)
         Me.Name = "Form1"
         Me.Text = "Snake and Ladder"
-        CType(Me.picMario, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.player1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.player2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBoard, System.ComponentModel.ISupportInitialize).EndInit()
@@ -188,7 +198,8 @@ Partial Class Form1
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents picDie2 As PictureBox
     Friend WithEvents btnRollDice2 As Button
-    Friend WithEvents picYoshi As PictureBox
-    Friend WithEvents picMario As PictureBox
+    Friend WithEvents player2 As PictureBox
+    Friend WithEvents player1 As PictureBox
     Friend WithEvents btnRestart As Button
+    Friend WithEvents imgPlayerList As ImageList
 End Class
