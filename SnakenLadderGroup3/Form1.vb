@@ -8,6 +8,8 @@ Public Class Form1
     Public player_Start As Integer
     Public player1_Score, player2_Score As Integer
     Public marioCondition, yoshiCondition, playerTurn As Boolean
+    Public p1Win, p2Win, p1StartMess, p2StartMess As String
+
     Dim p1_b As Point() = {New Point(39, 393), New Point(114, 393), New Point(188, 393), New Point(260, 393), New Point(333, 393), New Point(407, 393), New Point(407, 320), New Point(333, 320), New Point(260, 320), New Point(188, 320), New Point(114, 320), New Point(39, 320), New Point(39, 248), New Point(114, 248), New Point(188, 248), New Point(260, 248), New Point(333, 248), New Point(407, 248), New Point(407, 175), New Point(333, 175), New Point(260, 175), New Point(188, 175), New Point(114, 175), New Point(39, 175), New Point(39, 99), New Point(114, 99), New Point(188, 99), New Point(260, 99), New Point(333, 99), New Point(407, 99)}
     Dim p2_b As Point() = {New Point(39, 424), New Point(114, 424), New Point(188, 424), New Point(260, 424), New Point(333, 424), New Point(407, 424), New Point(407, 351), New Point(333, 351), New Point(260, 351), New Point(188, 351), New Point(114, 351), New Point(39, 351), New Point(39, 279), New Point(114, 279), New Point(188, 279), New Point(260, 279), New Point(333, 279), New Point(407, 279), New Point(407, 206), New Point(333, 206), New Point(260, 206), New Point(188, 206), New Point(114, 206), New Point(39, 206), New Point(39, 130), New Point(114, 130), New Point(188, 130), New Point(260, 130), New Point(333, 130), New Point(407, 130)}
 
@@ -25,32 +27,37 @@ Public Class Form1
         player2_Score = 0
         marioCondition = False
         yoshiCondition = False
-
+        p1Win = "player 1 WINS!!!"
+        p2Win = "player 2 WINS!!!"
+        p1StartMess = "Payer 1 rolled a 6 now COUNTER !!!"
+        p2StartMess = "PLayer 2 rolled a 6 now COUNTER!!! "
     End Sub
     '"ByRef" or Pass by Reference is to enable to change the variable by using or passing an arguement
     '"ByVal" or Pass by Value is to change the actual value of a property or variable
-    Public Sub setPlayerCondition(Dice As Integer, img As PictureBox, block As Point, ByRef cond As Boolean)
+    Public Sub setPlayerCondition(Dice As Integer, img As PictureBox, block As Point, ByRef cond As Boolean, CounterMess As String)
         'this method sets up the the players condition to start
         'arguement<Dice(random number generated), img(the players counter/picture), block(location of the counter/picture), cond(players condition to start)>
         If cond = False Then
             If Dice = player_Start Then
-                MessageBox.Show("Player 1 rolled a 6 now counter")
+                MessageBox.Show(CounterMess)
                 img.Location = block 'Starting Player
                 img.Visible = True
                 cond = True
             End If
         End If
     End Sub
-    Public Sub gameLogic(cond As Boolean, ByRef playerScore As Integer, ByRef playerCounter As PictureBox, pointsArray() As Point)
+    Public Sub gameLogic(cond As Boolean, ByRef playerScore As Integer, ByRef playerCounter As PictureBox, pointsArray() As Point, WMessage As String)
         If cond = True Then
             playerScore = setPlayerScore(playerScore, objDice.getDice)
             If playerScore <= 29 Then
                 Player_Position(playerCounter, pointsArray(playerScore), playerScore)
                 boardCondition.gameLadder(playerScore, playerCounter, pointsArray(playerScore))
             Else
-                MessageBox.Show("player 1 win") 'needs to change this message box
+                MessageBox.Show(WMessage) 'needs to change this message box
                 playerCounter.Location = pointsArray(29)
-                Console.WriteLine("Player 1 wins")
+                Console.WriteLine(WMessage)
+                'btnPlayAgain()
+
             End If
         End If
     End Sub
@@ -65,7 +72,6 @@ Public Class Form1
         'this "playerScore" Assigns the actual score of the player
         'when the "Dice" is rolled it gets added to the "playerScore"
         player_score += Dice
-
         '======================================================================================'
 
         'If (player_score <= 30) Then
@@ -84,6 +90,7 @@ Public Class Form1
             player.Location = place
         End If
     End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRollDice.Click
         'I assigned the diceValue to hold the objDice.getDice to be called easily and remember it easily
         Dim diceValue As Integer = objDice.getDice()
@@ -96,9 +103,9 @@ Public Class Form1
         objDice.setPictureDice(picDie1, diceValue, ImageList1)
         Console.WriteLine("player 1 Diced Rolled: " & diceValue)
         Console.WriteLine("Player 1 Score: " & player1_Score)
-        '======================================================================================'
-        gameLogic(marioCondition, player1_Score, player1, p1_b)
-        setPlayerCondition(diceValue, player1, p1_b(0), marioCondition)
+        ''======================================================================================'
+        gameLogic(marioCondition, player1_Score, picMario, p1_b, p1Win)
+        setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition, p1StartMess)
 
         'picMario.Location = p1_b(player1_Score)
 
@@ -118,8 +125,8 @@ Public Class Form1
         Console.WriteLine("player 2 Diced Rolled: " & diceValue)
         Console.WriteLine("Player 2 Score: " & player2_Score)
         '======================================================================================'
-        gameLogic(yoshiCondition, player2_Score, player2, p2_b)
-        setPlayerCondition(objDice.getDice(), player2, p2_b(0), yoshiCondition)
+        gameLogic(yoshiCondition, player2_Score, picYoshi, p2_b, p2Win)
+        setPlayerCondition(objDice.getDice(), picYoshi, p2_b(0), yoshiCondition, p2StartMess)
 
         'picYoshi.Location = p2_b(player2_Score)
 
@@ -127,5 +134,19 @@ Public Class Form1
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         'this line restarts the windows page of the game.
         Application.Restart()
+    End Sub
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        'this line exits the user out of game
+        Application.Exit()
+    End Sub
+    Public Sub btnPlayAgain()
+        Dim result As DialogResult = MessageBox.Show("do you want to play again", "player won", MessageBoxButtons.YesNoCancel)
+        If result = DialogResult.Cancel Then
+
+        ElseIf result = DialogResult.No Then
+            Application.Exit()
+        ElseIf result = DialogResult.Yes Then
+            Application.Restart()
+        End If
     End Sub
 End Class

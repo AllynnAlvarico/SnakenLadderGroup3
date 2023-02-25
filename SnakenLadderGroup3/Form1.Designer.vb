@@ -37,6 +37,10 @@ Partial Class Form1
         Me.imgPlayerList = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.player1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.player2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnRestart = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        CType(Me.picMario, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBoard, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,7 +49,7 @@ Partial Class Form1
         'btnRollDice
         '
         Me.btnRollDice.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnRollDice.Font = New System.Drawing.Font("Harlow Solid Italic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRollDice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRollDice.ForeColor = System.Drawing.Color.OliveDrab
         Me.btnRollDice.Location = New System.Drawing.Point(541, 302)
         Me.btnRollDice.Name = "btnRollDice"
@@ -57,11 +61,11 @@ Partial Class Form1
         'TitleProgram
         '
         Me.TitleProgram.BackColor = System.Drawing.Color.Transparent
-        Me.TitleProgram.Font = New System.Drawing.Font("Harlow Solid Italic", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TitleProgram.Font = New System.Drawing.Font("Snap ITC", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TitleProgram.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TitleProgram.Location = New System.Drawing.Point(448, 9)
+        Me.TitleProgram.Location = New System.Drawing.Point(314, 10)
         Me.TitleProgram.Name = "TitleProgram"
-        Me.TitleProgram.Size = New System.Drawing.Size(436, 71)
+        Me.TitleProgram.Size = New System.Drawing.Size(579, 80)
         Me.TitleProgram.TabIndex = 1
         Me.TitleProgram.Text = "Snakes and Ladders"
         '
@@ -79,7 +83,7 @@ Partial Class Form1
         'btnRollDice2
         '
         Me.btnRollDice2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btnRollDice2.Font = New System.Drawing.Font("Harlow Solid Italic", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRollDice2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRollDice2.ForeColor = System.Drawing.Color.OliveDrab
         Me.btnRollDice2.Location = New System.Drawing.Point(714, 302)
         Me.btnRollDice2.Name = "btnRollDice2"
@@ -156,6 +160,15 @@ Partial Class Form1
         '
         'imgPlayerList
         '
+        Me.btnRestart.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRestart.ForeColor = System.Drawing.Color.OliveDrab
+        Me.btnRestart.Location = New System.Drawing.Point(541, 393)
+        Me.btnRestart.Name = "btnRestart"
+        Me.btnRestart.Size = New System.Drawing.Size(97, 56)
+        Me.btnRestart.TabIndex = 38
+        Me.btnRestart.Text = "Restart"
+        Me.btnRestart.UseVisualStyleBackColor = False
         Me.imgPlayerList.ImageStream = CType(resources.GetObject("imgPlayerList.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.imgPlayerList.TransparentColor = System.Drawing.Color.Transparent
         Me.imgPlayerList.Images.SetKeyName(0, "Luigi.png")
@@ -163,12 +176,25 @@ Partial Class Form1
         Me.imgPlayerList.Images.SetKeyName(2, "Peach.png")
         Me.imgPlayerList.Images.SetKeyName(3, "Yoshi.png")
         '
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.Color.Plum
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.OliveDrab
+        Me.btnExit.Location = New System.Drawing.Point(714, 393)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(97, 56)
+        Me.btnExit.TabIndex = 39
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Khaki
         Me.ClientSize = New System.Drawing.Size(896, 486)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnRestart)
         Me.Controls.Add(Me.player1)
         Me.Controls.Add(Me.player2)
@@ -201,5 +227,6 @@ Partial Class Form1
     Friend WithEvents player2 As PictureBox
     Friend WithEvents player1 As PictureBox
     Friend WithEvents btnRestart As Button
+    Friend WithEvents btnExit As Button
     Friend WithEvents imgPlayerList As ImageList
 End Class
