@@ -1,6 +1,7 @@
 ﻿Imports System.Runtime.InteropServices.WindowsRuntime
 
 Public Class Form1
+    Public pick As New pickCharacters
     Public objDice As New Dice_Class
     Public boardCondition As New conditions
 
@@ -29,11 +30,14 @@ Public Class Form1
         yoshiCondition = False
         p1Win = "player 1 WINS!!!"
         p2Win = "player 2 WINS!!!"
-        p1StartMess = "Payer 1 rolled a 6 now COUNTER !!!"
-        p2StartMess = "PLayer 2 rolled a 6 now COUNTER!!! "
+        p1StartMess = "Player 1 rolled a 6 now COUNTER !!!"
+        p2StartMess = "Player 2 rolled a 6 now COUNTER!!! "
     End Sub
     '"ByRef" or Pass by Reference is to enable to change the variable by using or passing an arguement
     '"ByVal" or Pass by Value is to change the actual value of a property or variable
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        pick.Show()
+    End Sub
     Public Sub setPlayerCondition(Dice As Integer, img As PictureBox, block As Point, ByRef cond As Boolean, CounterMess As String)
         'this method sets up the the players condition to start
         'arguement<Dice(random number generated), img(the players counter/picture), block(location of the counter/picture), cond(players condition to start)>
@@ -83,6 +87,7 @@ Public Class Form1
         'this returns the value of the "playerScore"
         Return player_score
     End Function
+
     Public Sub Player_Position(player As PictureBox, place As Point, player_score As Integer)
         'this method sets up the location of the player on the board
         'if the player score is under 30 then the code places mario or yoshi on the board "place" is the location of the board)

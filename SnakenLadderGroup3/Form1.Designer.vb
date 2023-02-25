@@ -28,13 +28,13 @@ Partial Class Form1
         Me.TitleProgram = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.btnRollDice2 = New System.Windows.Forms.Button()
+        Me.btnRestart = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.picMario = New System.Windows.Forms.PictureBox()
         Me.picYoshi = New System.Windows.Forms.PictureBox()
         Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
         Me.picBoard = New System.Windows.Forms.PictureBox()
-        Me.btnRestart = New System.Windows.Forms.Button()
-        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.picMario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,6 +87,30 @@ Partial Class Form1
         Me.btnRollDice2.TabIndex = 34
         Me.btnRollDice2.Text = "Roll Dice (p.2)"
         Me.btnRollDice2.UseVisualStyleBackColor = False
+        '
+        'btnRestart
+        '
+        Me.btnRestart.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRestart.ForeColor = System.Drawing.Color.OliveDrab
+        Me.btnRestart.Location = New System.Drawing.Point(541, 393)
+        Me.btnRestart.Name = "btnRestart"
+        Me.btnRestart.Size = New System.Drawing.Size(97, 56)
+        Me.btnRestart.TabIndex = 38
+        Me.btnRestart.Text = "Restart"
+        Me.btnRestart.UseVisualStyleBackColor = False
+        '
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.Color.Plum
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.OliveDrab
+        Me.btnExit.Location = New System.Drawing.Point(714, 393)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(97, 56)
+        Me.btnExit.TabIndex = 39
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'picMario
         '
@@ -141,30 +165,6 @@ Partial Class Form1
         Me.picBoard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picBoard.TabIndex = 0
         Me.picBoard.TabStop = False
-        '
-        'btnRestart
-        '
-        Me.btnRestart.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnRestart.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRestart.ForeColor = System.Drawing.Color.OliveDrab
-        Me.btnRestart.Location = New System.Drawing.Point(541, 393)
-        Me.btnRestart.Name = "btnRestart"
-        Me.btnRestart.Size = New System.Drawing.Size(97, 56)
-        Me.btnRestart.TabIndex = 38
-        Me.btnRestart.Text = "Restart"
-        Me.btnRestart.UseVisualStyleBackColor = False
-        '
-        'btnExit
-        '
-        Me.btnExit.BackColor = System.Drawing.Color.Plum
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.ForeColor = System.Drawing.Color.OliveDrab
-        Me.btnExit.Location = New System.Drawing.Point(714, 393)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(97, 56)
-        Me.btnExit.TabIndex = 39
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = False
         '
         'Form1
         '

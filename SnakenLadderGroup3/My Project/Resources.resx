@@ -121,6 +121,9 @@
   <data name="snakes and ladders board" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\snakes and ladders board.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="img-chara-04-low" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img-chara-04-low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dice3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dice3.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,6 +132,9 @@
   </data>
   <data name="dice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dice2.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="small-super-mario-game-character-png-29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small-super-mario-game-character-png-29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dice4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dice4.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,13 +145,19 @@
   <data name="dice6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dice6.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img-chara-04-low" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img-chara-04-low.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pngdb-yoshi-image-super-mario-world-2-yoshis-island-new-bros-u-story-png-NpgibXJyGzyzcUtH3QHZRbeZx_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngdb-yoshi-image-super-mario-world-2-yoshis-island-new-bros-u-story-png-NpgibXJyGzyzcUtH3QHZRbeZx_t.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="small-super-mario-game-character-png-29" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small-super-mario-game-character-png-29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Luigi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mario_Characters\Luigi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mario_Characters\Mario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Peach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mario_Characters\Peach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yoshi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mario_Characters\Yoshi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

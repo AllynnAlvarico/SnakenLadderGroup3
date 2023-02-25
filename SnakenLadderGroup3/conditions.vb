@@ -19,10 +19,10 @@
     End Sub
     Public Sub gameLadder(ByRef player_score As Integer, ByRef playerCounter As PictureBox, place As Point)
         If effectBox.ContainsKey(player_score) Then
-            Dim value As Integer = effectBox(player_score)
-            player_score = value
+            Dim newvalue As Integer = effectBox(player_score)
+            player_score = newvalue
             playerCounter.Location = place
-            Console.WriteLine(value)
+            Console.WriteLine(newvalue)
         End If
     End Sub
 End Class
