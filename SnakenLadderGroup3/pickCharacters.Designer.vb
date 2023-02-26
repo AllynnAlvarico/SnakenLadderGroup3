@@ -35,6 +35,8 @@ Partial Class pickCharacters
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,9 +47,10 @@ Partial Class pickCharacters
         '
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 151)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(98, 23)
+        Me.Label1.Size = New System.Drawing.Size(98, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Mario"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -56,9 +59,10 @@ Partial Class pickCharacters
         '
         Me.Label2.BackColor = System.Drawing.Color.White
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label2.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(116, 151)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 23)
+        Me.Label2.Size = New System.Drawing.Size(100, 33)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Luigi"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -67,9 +71,10 @@ Partial Class pickCharacters
         '
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label3.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(222, 151)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(100, 23)
+        Me.Label3.Size = New System.Drawing.Size(100, 33)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Peach"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -78,9 +83,10 @@ Partial Class pickCharacters
         '
         Me.Label4.BackColor = System.Drawing.Color.White
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label4.Font = New System.Drawing.Font("Monotype Corsiva", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(328, 151)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(100, 23)
+        Me.Label4.Size = New System.Drawing.Size(100, 33)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Yoshi"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -161,11 +167,33 @@ Partial Class pickCharacters
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Player 1", "Player 2"})
+        Me.ComboBox1.Location = New System.Drawing.Point(328, 187)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 12
+        '
+        'Label5
+        '
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(222, 187)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(100, 21)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Choose Player:"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'pickCharacters
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(434, 199)
+        Me.ClientSize = New System.Drawing.Size(434, 220)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.pickYoshi)
         Me.Controls.Add(Me.pickPeach)
         Me.Controls.Add(Me.pickLuigi)
@@ -200,4 +228,6 @@ Partial Class pickCharacters
     Friend WithEvents pickLuigi As Button
     Friend WithEvents pickPeach As Button
     Friend WithEvents pickYoshi As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label5 As Label
 End Class
