@@ -5,11 +5,14 @@
         {3, "Peach.Png"},
         {4, "Yoshi.Png"}
     }
-    'Public player1Chosen, player2Chosen As String
     Public chooseTurn, player1Turn, player2Turn As Boolean
-    Public selectMario, selectLuigi, selectPeach, selectYoshi As Boolean
+    Public p1_note, p2_note As String
     Public player1, player2 As Integer
-
+    Public Sub New()
+        InitializeComponent()
+        p1_note = "Player 1 have chosen: "
+        p2_note = "Player 2 have chosen: "
+    End Sub
 
     Public Sub prompMessage(player As Integer)
         Dim defaultMessage = MessageBox.Show("Are you Sure?", "confirmation!", MessageBoxButtons.YesNo)
@@ -34,46 +37,40 @@
     End Sub
     Public Sub pickTurn(PlayerTurn As Boolean, playerSelected As Integer)
         If PlayerTurn = True Then
-            If selectMario = True Then
-                playerSelected = 1
-                pickMario.Enabled = False
-                player1Turn = False
-            ElseIf selectLuigi = True Then
-                playerSelected = 2
-                pickLuigi.Enabled = False
-                player1Turn = False
-            ElseIf selectPeach = True Then
-                playerSelected = 3
-                pickPeach.Enabled = False
-                player1Turn = False
-            ElseIf selectYoshi = True Then
-                playerSelected = 4
-                pickYoshi.Enabled = False
-                player1Turn = False
-            End If
+            Select Case playerSelected
+                Case 1
+                    pickMario.Enabled = False
+                    player1Turn = False
+                    Exit Select
+                Case 2
+                    pickLuigi.Enabled = False
+                    player1Turn = False
+                    Exit Select
+                Case 3
+                    pickPeach.Enabled = False
+                    player1Turn = False
+                    Exit Select
+                Case 4
+                    pickYoshi.Enabled = False
+                    player1Turn = False
+                    Exit Select
+            End Select
             prompMessage(playerSelected)
         End If
     End Sub
-    Public Sub New()
-        InitializeComponent()
-    End Sub
     Private Sub pickMario_Click(sender As Object, e As EventArgs) Handles pickMario.Click
-        selectMario = True
         pickTurn(True, 1)
     End Sub
 
     Private Sub pickLuigi_Click(sender As Object, e As EventArgs) Handles pickLuigi.Click
-        selectLuigi = True
         pickTurn(True, 2)
     End Sub
 
     Private Sub pickPeach_Click(sender As Object, e As EventArgs) Handles pickPeach.Click
-        selectPeach = True
         pickTurn(True, 3)
     End Sub
 
     Private Sub pickYoshi_Click(sender As Object, e As EventArgs) Handles pickYoshi.Click
-        selectYoshi = True
         pickTurn(True, 4)
     End Sub
 End Class
