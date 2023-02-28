@@ -44,7 +44,7 @@ Partial Class Form1
         '
         'btnRollDice
         '
-        Me.btnRollDice.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnRollDice.BackColor = System.Drawing.Color.Ivory
         Me.btnRollDice.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRollDice.ForeColor = System.Drawing.Color.OliveDrab
         Me.btnRollDice.Location = New System.Drawing.Point(541, 302)

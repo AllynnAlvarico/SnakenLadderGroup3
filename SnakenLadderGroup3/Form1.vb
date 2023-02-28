@@ -4,10 +4,10 @@ Public Class Form1
     Public objDice As New Dice_Class
     Public boardCondition As New conditions
 
-
     Public player_Start As Integer
     Public player1_Score, player2_Score As Integer
     Public marioCondition, yoshiCondition, playerTurn As Boolean
+    Public btn1, btn2 As Boolean
     Public p1Win, p2Win, p1StartMess, p2StartMess As String
 
     Dim p1_b As Point() = {New Point(39, 393), New Point(114, 393), New Point(188, 393), New Point(260, 393), New Point(333, 393), New Point(407, 393), New Point(407, 320), New Point(333, 320), New Point(260, 320), New Point(188, 320), New Point(114, 320), New Point(39, 320), New Point(39, 248), New Point(114, 248), New Point(188, 248), New Point(260, 248), New Point(333, 248), New Point(407, 248), New Point(407, 175), New Point(333, 175), New Point(260, 175), New Point(188, 175), New Point(114, 175), New Point(39, 175), New Point(39, 99), New Point(114, 99), New Point(188, 99), New Point(260, 99), New Point(333, 99), New Point(407, 99)}
@@ -83,14 +83,20 @@ Public Class Form1
         Return player_score
     End Function
 
-    Public Sub color()
-        'If Button Is click then
-        ' Me.btnRollDice.BackColor = color.White
-        'else
-        'color something
+    Public Sub btncolor()
+        If btn1 = True Then
+            btnRollDice.BackColor = Color.Blue
+            btn1 = False
+        Else
+            btnRollDice.BackColor = Color.Red
+        End If
+        If btn2 = True Then
+            btnRollDice2.BackColor = Color.Blue
+            btn2 = False
+        Else
+            btnRollDice2.BackColor = Color.Red
+        End If
     End Sub
-
-
 
     Public Sub Player_Position(player As PictureBox, place As Point, player_score As Integer)
         'this method sets up the location of the player on the board
@@ -119,6 +125,8 @@ Public Class Form1
         btnRollDice.Enabled = False
         btnRollDice2.Enabled = True
         ''======================================================================================'
+        btn1 = True
+        btncolor()
 
     End Sub
     Private Sub btnRollDice2_Click(sender As Object, e As EventArgs) Handles btnRollDice2.Click
@@ -140,6 +148,8 @@ Public Class Form1
         btnRollDice.Enabled = True
         btnRollDice2.Enabled = False
         '======================================================================================'
+        btn2 = True
+        btncolor()
     End Sub
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         'this line restarts the windows page of the game.
