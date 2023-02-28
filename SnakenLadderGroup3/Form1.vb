@@ -1,7 +1,6 @@
 ﻿Imports System.Runtime.InteropServices.WindowsRuntime
 
 Public Class Form1
-    Public pick As New pickCharacters
     Public objDice As New Dice_Class
     Public boardCondition As New conditions
 
@@ -35,9 +34,6 @@ Public Class Form1
     End Sub
     '"ByRef" or Pass by Reference is to enable to change the variable by using or passing an arguement
     '"ByVal" or Pass by Value is to change the actual value of a property or variable
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        pick.Show()
-    End Sub
     Public Sub setPlayerCondition(Dice As Integer, img As PictureBox, block As Point, ByRef cond As Boolean, CounterMess As String)
         'this method sets up the the players condition to start
         'arguement<Dice(random number generated), img(the players counter/picture), block(location of the counter/picture), cond(players condition to start)>
@@ -59,7 +55,7 @@ Public Class Form1
             Else
                 MessageBox.Show(WMessage) 'needs to change this message box
                 playerCounter.Location = pointsArray(29)
-                Console.WriteLine(WMessage)
+                Console.WriteLine("Player Score: " & playerScore & Environment.NewLine & WMessage)
                 'btnPlayAgain()
 
             End If
@@ -75,14 +71,13 @@ Public Class Form1
     Public Function setPlayerScore(player_score As Integer, Dice As Integer)
         'this "playerScore" Assigns the actual score of the player
         'when the "Dice" is rolled it gets added to the "playerScore"
-        player_score += Dice
+        'player_score += Dice
         '======================================================================================'
-
-        'If (player_score <= 30) Then
-        '    player_score += Dice
-        'Else
-        '    player_score = 30
-        'End If
+        If (player_score <= 30) Then
+            player_score += Dice
+        Else
+            player_score = 30
+        End If
         '======================================================================================'
         'this returns the value of the "playerScore"
         Return player_score
@@ -111,8 +106,10 @@ Public Class Form1
         ''======================================================================================'
         gameLogic(marioCondition, player1_Score, picMario, p1_b, p1Win)
         setPlayerCondition(diceValue, picMario, p1_b(0), marioCondition, p1StartMess)
+        ''======================================================================================'
+        btnRollDice.Enabled = False
+        btnRollDice2.Enabled = True
 
-        'picMario.Location = p1_b(player1_Score)
 
 
 
@@ -133,7 +130,8 @@ Public Class Form1
         gameLogic(yoshiCondition, player2_Score, picYoshi, p2_b, p2Win)
         setPlayerCondition(objDice.getDice(), picYoshi, p2_b(0), yoshiCondition, p2StartMess)
 
-        'picYoshi.Location = p2_b(player2_Score)
+        btnRollDice.Enabled = True
+        btnRollDice2.Enabled = False
 
     End Sub
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
