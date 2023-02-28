@@ -83,6 +83,15 @@ Public Class Form1
         Return player_score
     End Function
 
+    Public Sub color()
+        'If Button Is click then
+        ' Me.btnRollDice.BackColor = color.White
+        'else
+        'color something
+    End Sub
+
+
+
     Public Sub Player_Position(player As PictureBox, place As Point, player_score As Integer)
         'this method sets up the location of the player on the board
         'if the player score is under 30 then the code places mario or yoshi on the board "place" is the location of the board)
@@ -109,9 +118,7 @@ Public Class Form1
         ''======================================================================================'
         btnRollDice.Enabled = False
         btnRollDice2.Enabled = True
-
-
-
+        ''======================================================================================'
 
     End Sub
     Private Sub btnRollDice2_Click(sender As Object, e As EventArgs) Handles btnRollDice2.Click
@@ -129,10 +136,10 @@ Public Class Form1
         '======================================================================================'
         gameLogic(yoshiCondition, player2_Score, picYoshi, p2_b, p2Win)
         setPlayerCondition(objDice.getDice(), picYoshi, p2_b(0), yoshiCondition, p2StartMess)
-
+        '======================================================================================'
         btnRollDice.Enabled = True
         btnRollDice2.Enabled = False
-
+        '======================================================================================'
     End Sub
     Private Sub btnRestart_Click(sender As Object, e As EventArgs) Handles btnRestart.Click
         'this line restarts the windows page of the game.
