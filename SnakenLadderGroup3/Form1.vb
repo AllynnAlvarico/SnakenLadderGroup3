@@ -34,6 +34,20 @@ Public Class Form1
     End Sub
     '"ByRef" or Pass by Reference is to enable to change the variable by using or passing an arguement
     '"ByVal" or Pass by Value is to change the actual value of a property or variable
+    Public Sub btncolor()
+        If btn1 = True Then
+            btnRollDice.BackColor = Color.LightGreen
+            btn1 = False
+        Else
+            btnRollDice.BackColor = Color.PaleTurquoise
+        End If
+        If btn2 = True Then
+            btnRollDice2.BackColor = Color.LightGreen
+            btn2 = False
+        Else
+            btnRollDice2.BackColor = Color.PaleTurquoise
+        End If
+    End Sub
     Public Sub setPlayerCondition(Dice As Integer, img As PictureBox, block As Point, ByRef cond As Boolean, CounterMess As String)
         'this method sets up the the players condition to start
         'arguement<Dice(random number generated), img(the players counter/picture), block(location of the counter/picture), cond(players condition to start)>
@@ -82,22 +96,6 @@ Public Class Form1
         'this returns the value of the "playerScore"
         Return player_score
     End Function
-
-    Public Sub btncolor()
-        If btn1 = True Then
-            btnRollDice.BackColor = Color.Blue
-            btn1 = False
-        Else
-            btnRollDice.BackColor = Color.Red
-        End If
-        If btn2 = True Then
-            btnRollDice2.BackColor = Color.Blue
-            btn2 = False
-        Else
-            btnRollDice2.BackColor = Color.Red
-        End If
-    End Sub
-
     Public Sub Player_Position(player As PictureBox, place As Point, player_score As Integer)
         'this method sets up the location of the player on the board
         'if the player score is under 30 then the code places mario or yoshi on the board "place" is the location of the board)
@@ -127,6 +125,7 @@ Public Class Form1
         ''======================================================================================'
         btn1 = True
         btncolor()
+
 
     End Sub
     Private Sub btnRollDice2_Click(sender As Object, e As EventArgs) Handles btnRollDice2.Click
