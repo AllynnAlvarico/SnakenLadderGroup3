@@ -35,6 +35,7 @@ Partial Class Form1
         Me.picDie2 = New System.Windows.Forms.PictureBox()
         Me.picDie1 = New System.Windows.Forms.PictureBox()
         Me.picBoard = New System.Windows.Forms.PictureBox()
+        Me.lblPlayerNotice = New System.Windows.Forms.Label()
         CType(Me.picMario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picYoshi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picDie2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -166,12 +167,24 @@ Partial Class Form1
         Me.picBoard.TabIndex = 0
         Me.picBoard.TabStop = False
         '
+        'lblPlayerNotice
+        '
+        Me.lblPlayerNotice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lblPlayerNotice.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerNotice.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.lblPlayerNotice.Location = New System.Drawing.Point(575, 110)
+        Me.lblPlayerNotice.Name = "lblPlayerNotice"
+        Me.lblPlayerNotice.Size = New System.Drawing.Size(191, 43)
+        Me.lblPlayerNotice.TabIndex = 40
+        Me.lblPlayerNotice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Khaki
         Me.ClientSize = New System.Drawing.Size(896, 486)
+        Me.Controls.Add(Me.lblPlayerNotice)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnRestart)
         Me.Controls.Add(Me.picMario)
@@ -206,4 +219,5 @@ Partial Class Form1
     Friend WithEvents picMario As PictureBox
     Friend WithEvents btnRestart As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents lblPlayerNotice As Label
 End Class

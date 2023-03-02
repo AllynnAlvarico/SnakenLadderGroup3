@@ -38,12 +38,14 @@ Public Class Form1
         If btn1 = True Then
             btnRollDice.BackColor = Color.LightGreen
             btn1 = False
+            lblPlayerNotice.Text = "Player1's Turn"
         Else
             btnRollDice.BackColor = Color.PaleTurquoise
         End If
         If btn2 = True Then
             btnRollDice2.BackColor = Color.LightGreen
             btn2 = False
+            lblPlayerNotice.Text = "Player2's Turn"
         Else
             btnRollDice2.BackColor = Color.PaleTurquoise
         End If
@@ -128,6 +130,8 @@ Public Class Form1
 
 
     End Sub
+
+
     Private Sub btnRollDice2_Click(sender As Object, e As EventArgs) Handles btnRollDice2.Click
         'I assigned the diceValue to hold the objDice.getDice to be called easily and remember it easily
         Dim diceValue As Integer = objDice.getDice()
