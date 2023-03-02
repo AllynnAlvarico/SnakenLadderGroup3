@@ -172,11 +172,11 @@ Partial Class Form1
         Me.lblPlayerNotice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblPlayerNotice.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayerNotice.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.lblPlayerNotice.Location = New System.Drawing.Point(575, 110)
+        Me.lblPlayerNotice.Location = New System.Drawing.Point(538, 70)
         Me.lblPlayerNotice.Name = "lblPlayerNotice"
-        Me.lblPlayerNotice.Size = New System.Drawing.Size(191, 43)
+        Me.lblPlayerNotice.Size = New System.Drawing.Size(273, 91)
         Me.lblPlayerNotice.TabIndex = 40
-        Me.lblPlayerNotice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblPlayerNotice.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Form1
         '

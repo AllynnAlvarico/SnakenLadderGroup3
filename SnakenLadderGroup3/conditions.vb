@@ -17,12 +17,43 @@
         effectBox.Add(18, 6)
         effectBox.Add(16, 3)
     End Sub
-    Public Sub gameLadder(ByRef player_score As Integer, ByRef playerCounter As PictureBox, place As Point)
+    Public Sub gameLadder(ByRef player_score As Integer, ByRef playerCounter As PictureBox, ByRef lblPlayerNotice As Label, place As Point)
         If effectBox.ContainsKey(player_score) Then
             Dim newvalue As Integer = effectBox(player_score)
             player_score = newvalue
             playerCounter.Location = place
             Console.WriteLine(newvalue)
         End If
+
+        Select Case effectBox.ContainsKey(player_score)
+            Case 2
+                'lblPlayerNotice.Text = "Player gores up to 21"
+                Console.WriteLine("Im here")
+            Case 4
+                'lblPlayerNotice.Text = "Player gores up to 7"
+                Console.WriteLine("Im here")
+            Case 10
+                'lblPlayerNotice.Text = "Player gores up to 25"
+                Console.WriteLine("Im here")
+            Case 19
+                'lblPlayerNotice.Text = "Player gores up to 28"
+                Console.WriteLine("Im here")
+            Case 26
+                'lblPlayerNotice.Text = "Player gores down to 1"
+                Console.WriteLine("Im here")
+            Case 20
+                'lblPlayerNotice.Text = "Player gores down to 8"
+                Console.WriteLine("Im here")
+            Case 18
+                'lblPlayerNotice.Text = "Player gores down to 6"
+                Console.WriteLine("Im here")
+            Case 16
+                'lblPlayerNotice.Text = "Player gores down to 3"
+                Console.WriteLine("Im here")
+        End Select
+
+
     End Sub
+
+
 End Class

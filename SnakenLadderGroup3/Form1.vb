@@ -67,7 +67,7 @@ Public Class Form1
             playerScore = setPlayerScore(playerScore, objDice.getDice)
             If playerScore <= 29 Then
                 Player_Position(playerCounter, pointsArray(playerScore), playerScore)
-                boardCondition.gameLadder(playerScore, playerCounter, pointsArray(playerScore))
+                boardCondition.gameLadder(playerScore, playerCounter, lblPlayerNotice, pointsArray(playerScore))
             Else
                 MessageBox.Show(WMessage) 'needs to change this message box
                 playerCounter.Location = pointsArray(29)
